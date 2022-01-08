@@ -1,0 +1,271 @@
+{
+  "ftp://ccatura@ftp.charliecatura.com": {
+    ".Archived": {},
+    ".htaccess": {
+      "type": "-",
+      "size": 465,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".htpasswd": {
+      "type": "-",
+      "size": 40,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".membership": {
+      "type": "-",
+      "size": 3,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".quota": {
+      "type": "-",
+      "size": 77,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".trellix": {},
+    ".trellix_35_backup": {},
+    ".trellix_data_v5": {},
+    "ForMail.txt": {
+      "type": "-",
+      "size": 30012,
+      "lmtime": 0,
+      "modified": false
+    },
+    "SongWritersApp": {},
+    "Sync": {},
+    "blankday": {},
+    "blog": {},
+    "blogs": {},
+    "cartoons": {},
+    "cgi-bin": {},
+    "charlie_catura_little_pic.jpg": {
+      "type": "-",
+      "size": 81920,
+      "lmtime": 0,
+      "modified": false
+    },
+    "charliecatura": {},
+    "chucky": {},
+    "default_images": {},
+    "designs": {},
+    "dogworld": {},
+    "electricdragon": {},
+    "files": {},
+    "gp": {},
+    "grimsical": {},
+    "grimsical.com-redirect": {},
+    "heathersmassages": {},
+    "home": {},
+    "index.html": {
+      "type": "-",
+      "size": 5332,
+      "lmtime": 0,
+      "modified": false
+    },
+    "index.php": {
+      "type": "-",
+      "size": 198,
+      "lmtime": 0,
+      "modified": false
+    },
+    "infections.txt": {
+      "type": "-",
+      "size": 5921,
+      "lmtime": 0,
+      "modified": false
+    },
+    "jtv": {},
+    "kids": {},
+    "kidslinks.html": {
+      "type": "-",
+      "size": 1174,
+      "lmtime": 0,
+      "modified": false
+    },
+    "kidslinks_fun.html": {
+      "type": "-",
+      "size": 4758,
+      "lmtime": 0,
+      "modified": false
+    },
+    "kidslinks_learning.html": {
+      "type": "-",
+      "size": 1531,
+      "lmtime": 0,
+      "modified": false
+    },
+    "license.txt": {
+      "type": "-",
+      "size": 19929,
+      "lmtime": 0,
+      "modified": false
+    },
+    "listmanager": {},
+    "login.html": {
+      "type": "-",
+      "size": 178,
+      "lmtime": 0,
+      "modified": false
+    },
+    "lp": {},
+    "main": {},
+    "mcatura": {},
+    "melody": {},
+    "mobilewebcam": {},
+    "music": {},
+    "music-wp": {},
+    "petcutie": {},
+    "podcasts": {},
+    "portfolio": {
+      "images": {},
+      "portfolio-styles.css": {
+        "type": "-",
+        "size": 3161,
+        "lmtime": 0,
+        "modified": false
+      },
+      "portfolio.html": {
+        "type": "-",
+        "size": 2770,
+        "lmtime": 0,
+        "modified": false
+      },
+      "portfolio2.css": {
+        "type": "-",
+        "size": 3247,
+        "lmtime": 1640539462016,
+        "modified": false
+      },
+      "portfolio2.html": {
+        "type": "-",
+        "size": 2285,
+        "lmtime": 1640539489272,
+        "modified": false
+      }
+    },
+    "projects": {},
+    "raquel": {},
+    "readme.html": {
+      "type": "-",
+      "size": 7128,
+      "lmtime": 0,
+      "modified": false
+    },
+    "register.html": {
+      "type": "-",
+      "size": 230,
+      "lmtime": 0,
+      "modified": false
+    },
+    "scripshirts.net-redirect": {},
+    "sitebuildercontent": {},
+    "sl": {},
+    "ssv3_directory.php": {
+      "type": "-",
+      "size": 772,
+      "lmtime": 0,
+      "modified": false
+    },
+    "stats": {},
+    "store": {},
+    "test": {},
+    "testing.html": {
+      "type": "-",
+      "size": 431,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-activate.php": {
+      "type": "-",
+      "size": 4892,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-admin": {},
+    "wp-blog-header.php": {
+      "type": "-",
+      "size": 271,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-comments-post.php": {
+      "type": "-",
+      "size": 4795,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-config-sample.php": {
+      "type": "-",
+      "size": 3177,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-config.php": {
+      "type": "-",
+      "size": 3479,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-content": {},
+    "wp-cron.php": {
+      "type": "-",
+      "size": 2932,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-includes": {},
+    "wp-links-opml.php": {
+      "type": "-",
+      "size": 2380,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-load.php": {
+      "type": "-",
+      "size": 2359,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-login.php": {
+      "type": "-",
+      "size": 31739,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-mail.php": {
+      "type": "-",
+      "size": 7772,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-settings.php": {
+      "type": "-",
+      "size": 10585,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-signup.php": {
+      "type": "-",
+      "size": 25673,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-trackback.php": {
+      "type": "-",
+      "size": 4026,
+      "lmtime": 0,
+      "modified": false
+    },
+    "www": {},
+    "xmlrpc.php": {
+      "type": "-",
+      "size": 3015,
+      "lmtime": 0,
+      "modified": false
+    }
+  },
+  "$version": 1
+}

@@ -124,7 +124,7 @@ body {
 
 .cursor-blink {
     display: inline;
-    padding: 0 12px 0 12px;
+    padding: 0 0 0 8px;
     margin-left: 10px;
     background-color: black;
     

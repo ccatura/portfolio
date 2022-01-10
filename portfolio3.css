@@ -40,10 +40,11 @@
     justify-content: center;
     align-items: center;
     gap: 5%;
-    flex-basis: 50%;
 }
 
 .thumb {
-    min-width: 200px;
-    min-height: 100px;
+    min-width: 300px;
+    min-height: 200px;
+    flex-basis: 25%;
+
 }

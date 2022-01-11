@@ -29,7 +29,7 @@ body {
     flex-basis: 100%;
     order: 1;
     position: sticky;
-    top: -127px;
+    top: -90px;
     /* background-color: rgba(255,255,255,.5); */
     margin-bottom: 20px;
 }
@@ -52,14 +52,14 @@ body {
 .title {
     text-shadow: 0 0 10px white, 0 0 10px white;
     text-transform: uppercase;
-    font-size: 70px;
+    font-size: 45px;
     text-align: center;
 }
 
 .sub-title {
     text-shadow: 0 0 10px white, 0 0 10px white;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .links-container {
@@ -95,8 +95,9 @@ body {
 }
 
 .thumb {
-    min-width: 300px;
-    min-height: 200px;
+    padding: 20px;
+    min-width: 350px;
+    min-height: 300px;
     flex-basis: 25%;
     border-radius: 25px;
     flex-grow: 1;
@@ -105,6 +106,26 @@ body {
     border: 6px solid rgb(83, 83, 83);
     margin-bottom: 20px;
     box-shadow: 5px 5px 5px rgb(0, 0, 0, .3);
+    color: white;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    font-size: 30px;
+    text-shadow: 1px 1px 5px black, 3px 3px 5px black;
+}
+
+.thumb img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .5;
+}
+
+.thumb span {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .about-container {
@@ -119,10 +140,41 @@ body {
     padding: 0 10% 50px 10%;
 }
 
+.cursor-blink {
+    display: inline;
+    padding: 0 0 0 8px;
+    margin-left: 10px;
+    background-color: black;
+    
+    animation-name: flash;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+        @keyframes flash {
+            0% {opacity: 1;}
+            49% {opacity: 1;}
+            50% {opacity: 0;}
+            99% {opacity: 0;}
+            100% {opacity: 1;}
+        }
 
 
-
-
+        @keyframes fade-in {
+            0% {
+              opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+          }
+          .thumb {
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-name: fade-in;
+          }
 
 
 
@@ -166,4 +218,11 @@ body {
         padding: 20px 0 0 20px;
     }
 
+    .title {
+        font-size: 70px;
+    }
+
+    .sub-title {
+        font-size: 45px;
+    }
 }

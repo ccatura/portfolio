@@ -8,8 +8,8 @@
 
 body {
     font-family: 'Share Tech', sans-serif;
-    background: url(images/bg/retro-bg2.jpg) no-repeat center center fixed;
-    background-color: rgb(187, 182, 164);
+    background: url(images/bg/retro-bfg2.jpg) no-repeat center center fixed;
+    background-color: #eac761;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -151,6 +151,7 @@ body {
     margin: 20px 0 80px 0;
     padding-top: 40px;
     border-top: 2px solid rgba(0, 0, 0, .3);
+    background-color: #7f8e6d;
 }
 
 .about-container img {

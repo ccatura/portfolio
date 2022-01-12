@@ -29,7 +29,7 @@ body {
     flex-basis: 100%;
     order: 1;
     position: sticky;
-    top: -90px;
+    top: -95px;
     /* background-color: rgba(255,255,255,.5); */
     margin-bottom: 20px;
 }
@@ -70,6 +70,7 @@ body {
     align-items: center;
     gap: 5%;
     flex-basis: 50%;
+    margin-top: 10px;
 }
 
 .link {
@@ -79,7 +80,7 @@ body {
     border: 3px solid rgb(83, 83, 83);
     min-width: 70px;
     min-height: 70px;
-    border-radius: 50px;
+    border-radius: 50%;
     background-color: white;
     box-shadow: 5px 5px 5px rgb(0, 0, 0, .3);
 }
@@ -119,12 +120,22 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
+    width: 100%;
 }
 
 .thumb span {
     position: absolute;
     bottom: 20px;
     left: 20px;
+}
+
+.thumb figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 10px 10px 15px 20px;
+    width: 100%;
 }
 
 .about-container {
@@ -137,6 +148,7 @@ body {
     line-height: 1.5em;
     text-align: justify;
     padding: 0 10% 50px 10%;
+    margin-top: 20px;
 }
 
 .cursor-blink {
@@ -174,6 +186,30 @@ body {
             animation-iteration-count: 1;
             animation-name: fade-in;
           }
+
+.bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0%;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

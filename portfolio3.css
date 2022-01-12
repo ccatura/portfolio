@@ -148,7 +148,16 @@ body {
     line-height: 1.5em;
     text-align: justify;
     padding: 0 10% 50px 10%;
-    margin-top: 20px;
+    margin: 20px 0 80px 0;
+    padding-top: 40px;
+    border-top: 2px solid rgba(0, 0, 0, .3);
+}
+
+.about-container img {
+    width: 300px;
+    margin-bottom: 20px;;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, .3);
 }
 
 .cursor-blink {
@@ -217,14 +226,6 @@ body {
 
 
 
-@media (min-width: 647px) {
-    .about-container {
-        /* border: 4px dotted blue; */
-        flex-flow: row nowrap;
-        gap: 7%;
-    }
-}
-
 
 
 
@@ -259,5 +260,11 @@ body {
 
     .sub-title {
         font-size: 45px;
+    }
+
+    .about-container {
+        /* border: 4px dotted blue; */
+        flex-flow: row nowrap;
+        gap: 7%;
     }
 }

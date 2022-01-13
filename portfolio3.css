@@ -8,9 +8,9 @@
 
 body {
     font-family: 'Share Tech', sans-serif;
-    /* background: url(images/bg/retro-bg2.jpg) no-repeat center center fixed; */
+    background: url(images/bg/background.jpg) repeat center center fixed;
     background-color: #eac761;
-    background-image: linear-gradient(#eac761, #a08842);
+    /* background-image: linear-gradient(#eac761, #a08842); */
     /* -webkit-background-size: cover; */
     /* -moz-background-size: cover; */
     /* -o-background-size: cover; */
@@ -186,6 +186,7 @@ a {
     padding-top: 40px;
     border-top: 5px solid #4b553f;
     border-bottom: 5px solid #4b553f;
+    background: url(images/bg/background2.jpg) repeat center center fixed;
     background-color: #7f8e6d;
 }
 

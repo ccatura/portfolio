@@ -254,19 +254,32 @@ a {
 
 
 
+@media (min-width: 794px) {
+    .top-container {
+        flex-flow: row wrap;
+    }
+    .title-container {
+        justify-content: center;
+        align-items: flex-start;
+        height: 150px;
+        padding: 20px 0 0 20px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .sub-title {
+        font-size: 32px;
+    }
+}
 
 
 
 
 
 
-
-
-
-
-
-
-@media (min-width: 1150px) {
+@media (min-width: 1224px) {
     .top-container {
         flex-flow: row nowrap;
         position: inherit;
@@ -283,12 +296,6 @@ a {
     .link {
         min-width: 100px;
         min-height: 100px;
-    }
-
-    .title-container {
-        align-items: flex-start;
-        height: 150px;
-        padding: 20px 0 0 20px;
     }
 
     .title {

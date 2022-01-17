@@ -133,15 +133,15 @@ body {
     border-radius: 25px;
     flex-grow: 1;
     max-width: 400px;
-    border: 6px solid rgb(83, 83, 83);
+    border: 3px solid rgb(83, 83, 83);
     margin-bottom: 20px;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0, .3);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, .3);
     color: white;
     background-color: white;
     position: relative;
     overflow: hidden;
     font-size: 30px;
-    text-shadow: 1px 1px 5px black, 3px 3px 5px black;
+    /* text-shadow: 1px 1px 5px black, 3px 3px 5px black; */
 }
 
 .thumb img {
@@ -149,7 +149,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
+    opacity: .7;
     width: 100%;
 }
 
@@ -163,8 +163,8 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .8);
-    padding: 10px 10px 15px 20px;
+    background-color: #b76830;
+    padding: 10px 10px 10px 20px;
     width: 100%;
 }
 

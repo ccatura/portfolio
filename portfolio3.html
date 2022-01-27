@@ -64,7 +64,7 @@
     </div>
 
     
-    <div class="about-container">
+    <div id="about-container">
             
             <img src="images/photos/me-red-shirt.jpg" alt="">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab id repellat vero facere aliquid, error blanditiis voluptatem velit odit in mollitia doloremque nulla, rerum eveniet neque, dolorum maxime voluptatibus. Iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab id repellat vero facere aliquid, error blanditiis voluptatem velit odit in mollitia doloremque nulla, rerum eveniet neque, dolorum maxime voluptatibus. Iste.</p>
@@ -85,37 +85,53 @@
 
         
         <div class="links-container">
-            <div class="link">
+            <div class="link" id="goto-about-me">
                 <!-- <img src="images/links/github.png"> -->
                 <h3>About Me</h3>
                 <div class="popup">Read About Me</div>
             </div>
-            <div class="link">
+            <a href="https://github.com/ccatura">
+                <div class="link">
                 <!-- <h3>GitHub</h3> -->
-                <img src="images/links/github.png">
+                    <img src="images/links/github.png">
                 <div class="popup">Visit My GitHub</div>
-            </div>
-            <div class="link">
-                <!-- <h3>LinkedIn</h3> -->
-                <img src="images/links/linkedin.png">
-                <div class="popup">Visit My LinkedIn</div>
-            </div>
-            <div class="link">
-                <!-- <h3>Email Me</h3> -->
-                <img src="images/links/email.png">
-                <div class="popup">Email Me</div>
-            </div>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/charlescatura/">
+                <div class="link">
+                    <!-- <h3>LinkedIn</h3> -->
+                    <img src="images/links/linkedin.png">
+                    <div class="popup">Visit My LinkedIn</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="link" id="email-open">
+                    <!-- <h3>Email Me</h3> -->
+                    <img src="images/links/email.png">
+                    <div class="popup">Email Me</div>
+                </div>
+            </a>
         </div>
     </div>
 
-    
+
     <div class="bottom-container">
         <div class="footer">Hi, this is the footer!</div>
 
 
     </div>
 
+    <!-- Email Modal -->
+    <div id="email-modal">
+        <div class="email-modal-title-bar">
+            <div>Send Email</div>
+            <span id="close-email-modal">&#10005;</span>
+        </div>
 
+        <input id="email-input" type="text" placeholder="Your Email Address"/>
+        <textarea class="email-textarea" placeholder="Your Message"></textarea>
+        <button>Submit</button>
+    </div>
 
     
 </div>

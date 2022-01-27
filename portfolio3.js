@@ -1,4 +1,4 @@
-// Email modal
+// // Email modal
 var emailModal = document.getElementById("email-modal");
 var openButton = document.getElementById("email-open");
 var closeButton = document.getElementById("close-email-modal");
@@ -15,7 +15,7 @@ closeButton.onclick = function() {
 
 // Scroll to the 'about me' section
 var gotoAboutMe = document.getElementById("goto-about-me");
-var aboutMe = document.getElementById("about-me-container");
+var aboutMe = document.getElementById("about-container");
 
 gotoAboutMe.onclick = function() {
     aboutMe.scrollIntoView({behavior: "smooth"});

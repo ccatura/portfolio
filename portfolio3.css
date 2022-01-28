@@ -10,6 +10,7 @@
     --shadow1-trans: .5;
     --main-shadow: 10px 10px 0 rgb(0, 0, 0, var(--shadow1-trans));
     --small-shadow: 5px 5px 0 rgb(0, 0, 0, var(--shadow1-trans));
+    --thumb-size: calc(10vw + 10vh);
 }
 
 body {
@@ -382,6 +383,10 @@ a {
     }
 
     .thumb {
-        flex-basis: 47.5%;
+        /* flex-basis: 47.5%; */
+        /* flex-basis: initial; */
+        flex-basis: 40%;
+        width: var(--thumb-size);
+        height: var(--thumb-size);
     }
 }

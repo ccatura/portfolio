@@ -1,4 +1,4 @@
-// // Email modal
+// Email modal
 var emailModal = document.getElementById("email-modal");
 var openButton = document.getElementById("email-open");
 var closeButton = document.getElementById("close-email-modal");
@@ -9,6 +9,15 @@ openButton.onclick = function() {
 
 closeButton.onclick = function() {
     emailModal.style.display = "none";
+}
+
+
+
+// note popup
+var closePopup = document.getElementById("close-popup");
+var popup = document.getElementById("note");
+closePopup.onclick = function() {
+    popup.style.display = "none";
 }
 
 

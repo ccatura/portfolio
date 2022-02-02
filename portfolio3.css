@@ -24,6 +24,10 @@ body {
     /* background-size: cover; */
 }
 
+p {
+    margin-bottom: 1.5rem;
+}
+
 .page-container {
     display: flex;
     flex-flow: column wrap;
@@ -150,8 +154,8 @@ body {
 
 .thumb {
     /* padding: 20px; */
-    /* width: 500px;
-    height: 400px; */
+    /* width: 500px; */
+    /* height: 400px; */
     /* max-width: 400px; */
     /* flex-basis: 25%; */
     /* flex-grow: 1; */
@@ -203,8 +207,8 @@ a {
     flex-flow: column nowrap;
     align-items: center;
     order: 3;
-    font-size: 1.5rem;
-    line-height: 1.5em;
+    font-size: 1.2rem;
+    line-height: 1.2em;
     text-align: justify;
     padding: 0 10% 50px 10%;
     margin: 20px 0 80px 0;
@@ -313,6 +317,34 @@ a {
     border: 6px solid lightgray;
 }
 
+#note {
+    width: 75%;
+    height: auto;
+    transform: translate(-50%, 0);
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    background-color: rgb(176, 173, 228);
+    border: 5px black solid;
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 1;
+    font-size: 1.5rem;
+    box-shadow: 0 0 20px black;
+}
+
+#note a {
+    color: black;
+}
+
+#close-popup {
+    font-weight: bold;
+}
+
+
+
+
+
 
 
 
@@ -323,6 +355,7 @@ a {
 @media (min-width: 794px) {
     .top-container {
         flex-flow: row wrap;
+        position: inherit;
     }
     .title-container {
         justify-content: center;
@@ -337,6 +370,10 @@ a {
 
     .sub-title {
         font-size: 32px;
+    }
+
+    #note {
+        font-size: 2rem;
     }
 }
 
@@ -383,10 +420,11 @@ a {
     }
 
     .thumb {
-        /* flex-basis: 47.5%; */
+        flex-basis: 47.5%;
         /* flex-basis: initial; */
-        flex-basis: 40%;
-        width: var(--thumb-size);
-        height: var(--thumb-size);
+        /* flex-basis: 40%; */
+        /* width: var(--thumb-size); */
+        /* height: var(--thumb-size); */
     }
 }
+

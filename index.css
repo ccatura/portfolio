@@ -31,7 +31,7 @@ a {
 }
 
 .top-container {
-    border: 1px solid black;
+    /* border: 1px solid purple; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -40,7 +40,7 @@ a {
 }
 
 .title-container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -62,7 +62,7 @@ a {
 }
 
 .links-container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -90,7 +90,7 @@ a {
 }
 
 .thumbs-container {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;

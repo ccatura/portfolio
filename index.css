@@ -18,10 +18,19 @@
     --thumb-size: calc(10vw + 10vh);
     --text-color: black;
     --anim-timing: .2s;
+
+    --link-about-image-reg:     url(./images/links/about-reg.gif);
+    --link-about-image-hov:     url(./images/links/about-hov.gif);
+    --link-linkedin-image-reg:  url(./images/links/linkedin-reg.gif);
+    --link-linkedin-image-hov:  url(./images/links/linkedin-hov.gif);
+    --link-git-image-reg:       url(./images/links/git-reg.gif);
+    --link-git-image-hov:       url(./images/links/git-hov.gif);
+    --link-email-image-reg:     url(./images/links/email-reg.gif);
+    --link-email-image-hov:     url(./images/links/email-hov.gif);
 }
 
 body {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Play', sans-serif;
     background-color: #eee;
     color: var(--text-color);
     background-image: url("./images/bg/checkered.jpg");
@@ -159,41 +168,41 @@ a {
 }
 
 #about {
-    background-image: url(./images/links/about-reg.gif);
+    background-image: var(--link-about-image-reg);
     background-size: 100%;
 }
 
 #about:hover {
-    background-image: url(./images/links/about-hov.gif);
+    background-image: var(--link-about-image-hov);
 }
 
 #linkedin {
-    background-image: url(./images/links/linkedin-reg.gif);
+    background-image: var(--link-linkedin-image-reg);
     background-size: 100%;
     background-position: 3px;
 }
 
 #linkedin:hover {
-    background-image: url(./images/links/linkedin-hov.gif);
+    background-image: var(--link-linkedin-image-hov);
 }
 
 #git {
-    background-image: url(./images/links/git-reg.gif);
+    background-image: var(--link-git-image-reg);
     background-size: 100%;
     background-position: 2px;
 }
 
 #git:hover {
-    background-image: url(./images/links/git-hov.gif);
+    background-image: var(--link-git-image-hov);
 }
 
 #email {
-    background-image: url(./images/links/email-reg.gif);
+    background-image: var(--link-email-image-reg);
     background-size: 100%;
 }
 
 #email:hover {
-    background-image: url(./images/links/email-hov.gif);
+    background-image: var(--link-email-image-hov);
 }
 
 
@@ -256,3 +265,27 @@ a {
         height: 25vw;
     }
 }
+
+/* TEST */
+@media (pointer: coarse) {
+    .thumbs-container a figcaption {
+        background-color: rgb(0, 119, 230) !important;
+        color: white;
+    }
+
+    #about {
+        background-image: var(--link-about-image-hov);
+    }
+
+    #linkedin {
+        background-image: var(--link-linkedin-image-hov);
+    }
+    
+    #git {
+        background-image: var(--link-git-image-hov);
+    }
+    
+    #email {
+        background-image: var(--link-email-image-hov);
+    }
+} 

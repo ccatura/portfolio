@@ -106,6 +106,7 @@ a {
     text-align: center;
     margin: 4px 0 0 0;
     box-shadow: var(--small-shadow);
+    font-size: 14px;
     z-index: 1;
 }
 
@@ -229,7 +230,24 @@ a {
     background-image: var(--link-email-image-hov);
 }
 
+.cursor-blink {
+    display: inline;
+    padding: 0 0 0 8px;
+    margin-left: 10px;
+    background-color: black;
+    
+    animation-name: flash;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
 
+        @keyframes flash {
+            0% {opacity: 1;}
+            49% {opacity: 1;}
+            50% {opacity: 0;}
+            99% {opacity: 0;}
+            100% {opacity: 1;}
+        }
 
 
 

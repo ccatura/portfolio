@@ -36,7 +36,7 @@ a {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: stretch;
-    margin: 10px 0 20px 0;
+    margin: 10px 20px 60px 20px;
 }
 
 .title-container {
@@ -65,7 +65,7 @@ a {
     /* border: 2px solid blue; */
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 2% 0 2%;
 }
@@ -106,6 +106,15 @@ a {
     font-weight: bold;
 }
 
+.thumbs-container figure:hover figcaption {
+    background-color: rgb(0, 119, 230);
+    color: white;
+}
+
+.thumbs-container figure:hover {
+    transform: scale(1.05);
+}
+
 .thumb {
     flex-basis: 85vw;
     height: 85vw;
@@ -116,17 +125,49 @@ a {
     background-color: white;
     border: 3px solid black;
     margin: 0 0 20px 0;
+    transition: transform .2s;
+}
+
+#about {
+    background-image: url(./images/links/about-reg.gif);
+    background-size: 100%;
+}
+
+#about:hover {
+    background-image: url(./images/links/about-hov.gif);
+}
+
+#linkedin {
+    background-image: url(./images/links/linkedin-reg.gif);
+    background-size: 100%;
+    background-position: 3px;
+}
+
+#linkedin:hover {
+    background-image: url(./images/links/linkedin-hov.gif);
+}
+
+#git {
+    background-image: url(./images/links/git-reg.gif);
+    background-size: 100%;
+    background-position: 2px;
+}
+
+#git:hover {
+    background-image: url(./images/links/git-hov.gif);
+}
+
+#email {
+    background-image: url(./images/links/email-reg.gif);
+    background-size: 100%;
+}
+
+#email:hover {
+    background-image: url(./images/links/email-hov.gif);
 }
 
 
-
-
-
-
-
-
-
-@media (min-width: 710px) {
+@media (min-width: 800px) {
     .top-container {
         flex-flow: row nowrap;
         justify-content: space-between;

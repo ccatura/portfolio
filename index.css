@@ -26,7 +26,8 @@
     --link-git-image-reg:       url(./images/links/git-reg.gif);
     --link-git-image-hov:       url(./images/links/git-hov.gif);
     --link-email-image-reg:     url(./images/links/email-reg.gif);
-    --link-email-image-hov:     url(./images/links/email-hov.gif);
+    --link-email-image-hov:     url(./images/links/email-reg.gif);
+    --accent-color: rgb(0, 119, 230);
 }
 
 body {
@@ -68,14 +69,16 @@ a {
 .title {
     text-shadow: 5px 4px 0 rgb(0, 0, 0, .2);
     text-transform: uppercase;
-    /* font-size: 10vw; */
     text-align: center;
+    font-size: 2.3rem;
+    font-weight: bold;
 }
 
 .sub-title {
     text-shadow: 4px 3px 0 rgb(0, 0, 0, .2);
     text-align: center;
-    /* font-size: 5.5vw; */
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .links-container {
@@ -101,6 +104,7 @@ a {
     width: 100%;
     text-align: center;
     margin: 4px 0 0 0;
+    box-shadow: var(--small-shadow);
     z-index: 1;
 }
 
@@ -126,7 +130,8 @@ a {
 
 .link:hover {
     transform: scale(1.1);
-}
+    background-color: var(--accent-color);
+} 
 
 .thumbs-container {
     /* border: 2px solid green; */
@@ -232,6 +237,16 @@ a {
         margin: 0;
     }
 
+    .title {
+        font-size: 2.6rem;
+        font-weight: bold;    
+    }
+
+    .sub-title {
+        font-size: 1.55rem;
+        font-weight: bold;    
+    }
+
     .links-container {
     flex-basis: 50%;
     }
@@ -264,28 +279,44 @@ a {
         flex-basis: 25vw;
         height: 25vw;
     }
+
+    .title {
+        font-size: 3.7rem;
+        font-weight: bold;    
+    }
+
+    .sub-title {
+        font-size: 2.2rem;
+        font-weight: bold;    
+    }
+
+
 }
 
 /* TEST */
 @media (pointer: coarse) {
     .thumbs-container a figcaption {
-        background-color: rgb(0, 119, 230) !important;
+        background-color: var(--accent-color) !important;
         color: white;
     }
 
     #about {
         background-image: var(--link-about-image-hov);
+        background-color: var(--accent-color);
     }
 
     #linkedin {
         background-image: var(--link-linkedin-image-hov);
+        background-color: var(--accent-color);
     }
     
     #git {
         background-image: var(--link-git-image-hov);
+        background-color: var(--accent-color);
     }
     
     #email {
         background-image: var(--link-email-image-hov);
+        background-color: var(--accent-color);
     }
 } 

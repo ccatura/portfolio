@@ -14,6 +14,7 @@
 :root {
     --shadow1-trans: .4;
     --main-shadow: 10px 10px 0 rgb(0, 0, 0, var(--shadow1-trans));
+    --soft-shadow: 0 0 10px rgb(0, 0, 0, 1);
     --small-shadow: 5px 5px 0 rgb(0, 0, 0, var(--shadow1-trans));
     --thumb-size: calc(10vw + 10vh);
     --text-color: black;
@@ -133,6 +134,32 @@ a {
     background-color: var(--accent-color);
 } 
 
+.thumb {
+    flex-basis: 85vw;
+    height: 85vw;
+    border-radius: 20px;
+    box-shadow: var(--main-shadow);
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border: 3px solid black;
+    margin: 0 0 20px 0;
+    transition: transform var(--anim-timing);
+    position: relative;
+}
+
+.thumb img {
+    position: absolute;
+    width: 78%;
+    height: 78%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: var(--soft-shadow);
+    filter: grayscale(100%);
+    opacity: .4;
+}
+
 .thumbs-container {
     /* border: 2px solid green; */
     display: flex;
@@ -159,28 +186,9 @@ a {
     transform: scale(1.05);
 }
 
-.thumb {
-    flex-basis: 85vw;
-    height: 85vw;
-    border-radius: 20px;
-    box-shadow: var(--main-shadow);
-    position: relative;
-    overflow: hidden;
-    background-color: white;
-    border: 3px solid black;
-    margin: 0 0 20px 0;
-    transition: transform var(--anim-timing);
-    position: relative;
-}
-
-.thumb img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(60%);
-    box-shadow: var(--main-shadow);
-    width: 75%;
-    border: 2px solid black;
+.thumbs-container a:hover img {
+    opacity: 1;
+    filter: grayscale(0%);
 }
 
 #about {
@@ -329,5 +337,10 @@ a {
     #email {
         background-image: var(--link-email-image-hov);
         background-color: var(--accent-color);
+    }
+
+    .thumbs-container a img {
+        opacity: 1;
+        filter: grayscale(0%);
     }
 } 

@@ -338,6 +338,32 @@ a {
     margin-bottom: 1.5rem;
 }
 
+button {
+    background-color: white;
+    color: black;
+    width: 75px;
+    height: 30px;
+    border: 2px solid black;
+    box-shadow: var(--soft-shadow);
+    font-family: 'Play', sans-serif;
+}
+
+button:active {
+    box-shadow: none;
+    transform: scale(.95);
+    background-color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

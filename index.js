@@ -14,11 +14,11 @@ closeButton.onclick = function() {
 
 
 // note popup
-var closePopup = document.getElementById("close-popup");
-var popup = document.getElementById("note");
-closePopup.onclick = function() {
-    popup.style.display = "none";
-}
+// var closePopup = document.getElementById("close-popup");
+// var popup = document.getElementById("note");
+// closePopup.onclick = function() {
+//     popup.style.display = "none";
+// }
 
 
 

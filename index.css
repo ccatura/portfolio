@@ -37,6 +37,7 @@ body {
     color: var(--text-color);
     background-image: url("./images/bg/checkered.jpg");
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 a {
@@ -135,6 +136,10 @@ a {
     background-color: var(--accent-color);
 } 
 
+#goto-about-me {
+    cursor: pointer;
+}
+
 .thumb {
     flex-basis: 85vw;
     height: 85vw;
@@ -167,6 +172,16 @@ a {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    animation: fade-in 1.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    from { 
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .thumbs-container a figure figcaption {
@@ -221,7 +236,7 @@ a {
     background-image: var(--link-git-image-hov);
 }
 
-#email {
+#email-open {
     background-image: var(--link-email-image-reg);
     background-size: 100%;
 }
@@ -248,6 +263,81 @@ a {
             99% {opacity: 0;}
             100% {opacity: 1;}
         }
+
+.email-modal-title-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 105%;
+    margin-top: 10px;
+}
+
+#close-email-modal {
+    font-weight: bold;
+}
+
+#close-email-modal:hover {
+    cursor: pointer;
+}
+
+#email-input {
+    width: 200px;
+}
+
+.email-textarea {
+    flex-basis: 50%;
+    width: 200px;
+}
+
+#email-modal {
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 25px black;
+    padding: 0px 20px 10px 20px;
+    border: 3px solid black;
+    z-index: 1;
+}
+
+#about-container {
+    /* border: 4px dotted blue; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    order: 3;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    text-align: justify;
+    padding: 0 10% 50px 10%;
+    margin: 20px 0 80px 0;
+    padding-top: 40px;
+    border-top: 5px solid #4b553f;
+    border-bottom: 5px solid #4b553f;
+    background-color: rgba(140, 140, 140, .5);
+}
+
+#about-container img {
+    width: 300px;
+    margin-bottom: 20px;;
+    box-shadow: var(--main-shadow);
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+#about-container p {
+    margin-bottom: 1.5rem;
+}
+
 
 
 
@@ -327,6 +417,11 @@ a {
         font-weight: bold;    
     }
 
+    #about-container {
+        /* border: 4px dotted blue; */
+        flex-flow: row nowrap;
+        gap: 7%;
+    }
 
 }
 
@@ -352,7 +447,7 @@ a {
         background-color: var(--accent-color);
     }
     
-    #email {
+    #email-open {
         background-image: var(--link-email-image-hov);
         background-color: var(--accent-color);
     }

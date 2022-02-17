@@ -109,16 +109,22 @@
 
 
     <!-- Email Modal -->
-    <div id="email-modal">
-        <div class="email-modal-title-bar">
-            <div class="window-title">Send Email</div>
-            <div id="close-email-modal">&#10005;</div>
-        </div>
+    <form method= "post" action="https://www.fatcow.com/scripts/formemail.html">
+        <input type="hidden" name="my_email" value="web001+ccatura@gmail.com">
+        <input type="hidden" name="subject" value="Message-From-Website">
+        <div id="email-modal">
+            <div class="email-modal-title-bar">
+                <div class="window-title">Send Email</div>
+                <div id="close-email-modal">&#10005;</div>
+            </div>
 
-        <input id="email-input" type="text" placeholder="Your Email Address"/>
-        <textarea class="email-textarea" placeholder="Your Message">Server down.&#13;&#10;Please email me at coder@charliecatura.com</textarea>
-        <button id="send-email">Close</button>
-    </div>
+            <input id="email-input" type="text" name="email" placeholder="Your Email Address"/>
+            <textarea class="email-textarea" name="their-message" placeholder="Your Message">Server down.&#13;&#10;Please email me at coder@charliecatura.com</textarea>
+            <!-- <button id="send-email">Close</button> -->
+            <input id="send-email" type="submit" name="submit" value="Send" >
+        </div>
+    </form>
+
 
 
 </div>

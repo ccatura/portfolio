@@ -341,8 +341,8 @@ a {
     margin-bottom: 1.5rem;
 }
 
-button {
-    background-color: white;
+#send-email {
+    /* background-color: white; */
     color: black;
     width: 75px;
     height: 30px;

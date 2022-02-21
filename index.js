@@ -6,7 +6,11 @@ var closeButton2 = document.getElementById("send-email");
 
 openButton.onclick = function() {
     emailModal.style.display = "flex";
-    document.getElementById('email-input').focus();}
+    document.getElementById('email-input').focus();
+    document.getElementById('email-textarea').value = '';
+    document.getElementById('email-input').value = '';
+
+}
 
 closeButton1.onclick = function() {
     emailModal.style.display = "none";
@@ -26,6 +30,8 @@ var aboutMe = document.getElementById("about-container");
 gotoAboutMe.onclick = function() {
     aboutMe.scrollIntoView({behavior: "smooth"});
 }
+
+
 
 
 

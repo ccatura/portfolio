@@ -351,6 +351,15 @@ a {
     background-color: rgba(140, 140, 140, 1);
 }
 
+#about-container div {
+    height: 300px;
+    overflow-y: scroll;
+    background-color: rgb(122, 122, 122);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;;
+}
+
 #about-container img {
     width: 300px;
     margin-bottom: 20px;;

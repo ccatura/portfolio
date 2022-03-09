@@ -37,8 +37,8 @@ gotoAboutMe.onclick = function() {
 
 
 // note popup
-// var closePopup = document.getElementById("close-popup");
-// var popup = document.getElementById("note");
-// closePopup.onclick = function() {
-//     popup.style.display = "none";
-// }
+var closePopup = document.getElementById("closebox");
+var popup = document.getElementById("popup");
+closePopup.onclick = function() {
+    popup.style.display = "none";
+}

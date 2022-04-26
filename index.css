@@ -207,6 +207,24 @@ a {
     filter: grayscale(0%);
 }
 
+.desc {
+    display: none;
+    position: absolute;
+    box-shadow: var(--soft-shadow);
+    background-color: #ddd;
+    margin: 20px;
+    padding: 20px;
+    top: 50%;
+    transform: translate(0, -55%);
+    border-radius: 10px;
+    font-size: .9em;
+}
+
+
+.thumbs-container a:hover .desc {
+    display: block;
+}
+
 #about {
     background-image: var(--link-about-image-reg);
     background-size: 100%;

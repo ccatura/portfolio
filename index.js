@@ -1,8 +1,7 @@
 // Email modal
 var emailModal = document.getElementById("email-modal");
 var openButton = document.getElementById("email-open");
-var closeButton1 = document.getElementById("close-email-modal");
-var closeButton2 = document.getElementById("send-email");
+var closeButton = document.querySelector("#close-email-modal, #send-email");
 
 openButton.onclick = function() {
     emailModal.style.display = "flex";
@@ -12,15 +11,9 @@ openButton.onclick = function() {
 
 }
 
-closeButton1.onclick = function() {
+closeButton.onclick = function() {
     emailModal.style.display = "none";
 }
-
-closeButton2.onclick = function() {
-    emailModal.style.display = "none";
-}
-
-
 
 
 // Scroll to the 'about me' section
@@ -37,8 +30,12 @@ gotoAboutMe.onclick = function() {
 
 
 // note popup
-var closePopup = document.getElementById("closebox");
-var popup = document.getElementById("popup");
-closePopup.onclick = function() {
+var closePopup = document.querySelector("#closebox, #popup-dim");
+var popup = document.querySelector("#popup-dim");
+
+closePopup.addEventListener("click", closePopUp);
+
+function closePopUp() {
     popup.style.display = "none";
+    document.body.style.overflow = "auto";
 }

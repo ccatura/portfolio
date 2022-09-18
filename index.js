@@ -29,13 +29,19 @@ gotoAboutMe.onclick = function() {
 
 
 
-// note popup
-var closePopup = document.querySelector("#closebox, #popup-dim");
+
+
+
+
+
+
+// note popup at start
+var closePopup = document.querySelector("#closebox");
 var popup = document.querySelector("#popup-dim");
 
-closePopup.addEventListener("click", closePopUp);
-
-function closePopUp() {
-    popup.style.display = "none";
-    document.body.style.overflow = "auto";
-}
+document.body.addEventListener("click", function(e) {
+    if(e.target.id == "popup-dim" || e.target.id == "closebox") {
+        popup.style.display = "none";
+        document.body.style.overflow = "auto";
+    };
+})

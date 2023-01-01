@@ -8,6 +8,7 @@
     --trans-delay: .5s;
     --border-radius: 20px;
     --border-color-general: #222;
+    --border-color-about: #ffffff;
 
     --body-copy-color: black;
     --body-copy-color-light: #eed7b2;
@@ -208,6 +209,7 @@ body {
     box-shadow: var(--shadow-close);
     border-radius: var(--border-radius);
     background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 2em;
 }
 
 .project:hover {
@@ -225,7 +227,6 @@ body {
     background-color: black;
     width: 100%;
     height: 100%;
-    /* border: 6px solid var(--border-color-general); */
     outline: 6px solid var(--border-color-general);
     outline-offset: -6px;
     border-radius: var(--border-radius);
@@ -301,6 +302,7 @@ body {
     transform: translate(-50%, -50%);
     -webkit-filter: drop-shadow(0 0 30px black);
     filter: drop-shadow(0 0 30px black);
+    z-index: 3;
 }
 
 .about-container {
@@ -311,7 +313,7 @@ body {
 
 .about-left-col {
     width: 30%;
-    /* border: 2px dotted blue; */
+    border: 5px solid var(--border-color-about);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -333,6 +335,7 @@ body {
     margin-bottom: 1em;
     font-size: 1.5em;
     color: var(--body-copy-color-light);
+    text-shadow: var(--shadow-far);
 }
 
 .about-image {
@@ -382,6 +385,10 @@ body {
         width: auto;
         height: 500px;
     }
+
+    .project {
+        width: 40vw;
+        height: calc(40vw * .9);    }
 }
 
 @media screen and (max-width: 900px) {
@@ -416,11 +423,30 @@ body {
         margin-left: 1em;
         margin-right: 1em;
     }
+    
+    .project {
+        width: 90vw;
+        height: calc(90vw * .9);
+    }
 }
 
 @media screen and (max-width: 600px) {
     .about-right-col p {
         font-size: 1.1em;
+    }
+
+    .link-image {
+        width: 50px;
+        height: 50px;
+        border: 3px solid var(--border-color-general);
+    }
+    
+    .link-title {
+        border-radius: 8px;
+        border: 2px solid var(--border-color-general);
+        text-align: center;
+        padding: 1px 3px;
+        font-size: .8em;
     }
 }
 
@@ -437,17 +463,4 @@ body {
         font-size: 1.22em;
     }
 
-    .link-image {
-        width: 50px;
-        height: 50px;
-        border: 3px solid var(--border-color-general);
-    }
-    
-    .link-title {
-        border-radius: 8px;
-        border: 2px solid var(--border-color-general);
-        text-align: center;
-        padding: 1px 3px;
-        font-size: .8em;
-    }
 }

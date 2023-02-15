@@ -1,7 +1,7 @@
 var subHeadingInput = document.getElementById('sub-heading-input');
 var subHeadValue = subHeadingInput.value;
 var pacman = document.getElementById('pacman');
-var emailModal = document.querySelector('email-modal-darken-screen');
+var emailModal = document.getElementById('email-modal');
 
 subHeadingInput.addEventListener('click', function() {
     this.select();
@@ -17,7 +17,7 @@ subHeadingInput.addEventListener('change', function() {
 });
 
 function showEmailModal() {
-    emailModal.classList.toggle('email-modal-darken-screen');
+    emailModal.classList.toggle('show-hide');
 }
 
 function showPacman() {

@@ -16,6 +16,19 @@ subHeadingInput.addEventListener('change', function() {
     showPacman();
 });
 
+emailModal.addEventListener('click', function(e) {
+    if(e.target.id == 'email-modal') {
+        showEmailModal();
+    }
+});
+
+
+
+
+
+
+
+
 function showEmailModal() {
     emailModal.classList.toggle('show-hide');
 }

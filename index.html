@@ -89,22 +89,26 @@
             </div>
         </div>
 
-        <div class="email-modal-container" id="email-modal">
-            <div class="email-modal-window">
-                <div class="email-modal-title-bar"><p>Email Me</p><p class="close-button" title="Close" onclick="showEmailModal()">&#10005;</p></div>
-                <p>Name</p>
-                <input type="text">
-                <p>Email</p>
-                <input type="text">
-                <p>Message</p>
-                <textarea></textarea>
-                <div class="email-modal-buttons">
-                    <button>Submit</button>
-                    <button>Cancel</button>
+        <form target="_blank" method="post" action="https://formsubmit.co/b56dd465e24e0b437585ed6279f36498">
+            <input type="hidden" name="_subject" value="Email from Portfolio">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://charliecatura.com/thanks.html">
+
+            <div class="email-modal-container" id="email-modal">
+                <div class="email-modal-window">
+                    <div class="email-modal-title-bar"><p>Email Me</p><p class="close-button" title="Close" onclick="showEmailModal()">&#10005;</p></div>
+                    <p>Name</p>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <p>Email</p>
+                    <input  type="email" name="email" placeholder="Your Email Address" required>
+                    <p>Message</p>
+                    <textarea name="their-message" placeholder="Your message here." required></textarea>
+                    <div class="email-modal-buttons">
+                        <input id="send-email" type="submit" name="submit" value="Send">
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </form>
 
 
 

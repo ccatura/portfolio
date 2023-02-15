@@ -25,20 +25,24 @@
                     onmouseout="this.style.backgroundImage = 'url(images/links/about-reg.gif)'"></div>
                 <div class="link-title">About</div>
             </div>
-            <div class="link">
-                <div class="link-image" style="background-image: url('images/links/linkedin-reg.gif'); background-position: 3px 0;"
-                onmouseover="this.style.backgroundImage = 'url(images/links/linkedin-hov.gif)'"
-                onmouseout="this.style.backgroundImage = 'url(images/links/linkedin-reg.gif)'"></div>
-                <div class="link-title">LinkedIn</div>
-            </div>
-            <div class="link">
-                <div class="link-image" style="background-image: url('images/links/git-reg.gif'); background-position: 0 4px;"
-                onmouseover="this.style.backgroundImage = 'url(images/links/git-hov.gif)'"
-                onmouseout="this.style.backgroundImage = 'url(images/links/git-reg.gif)'"></div>
-                <div class="link-title">Git Hub</div>
-            </div>
-            <div class="link">
-                <div class="link-image" style="background-image: url('images/links/email-reg.gif');"></div>
+            <a href="https://www.linkedin.com/in/charlescatura/" target="_blank">
+                <div class="link">
+                    <div class="link-image" style="background-image: url('images/links/linkedin-reg.gif'); background-position: 3px 0;"
+                        onmouseover="this.style.backgroundImage = 'url(images/links/linkedin-hov.gif)'"
+                        onmouseout="this.style.backgroundImage = 'url(images/links/linkedin-reg.gif)'"></div>
+                    <div class="link-title">LinkedIn</div>
+                </div>
+            </a>
+            <a href="http://github.com" target="_blank">
+                <div class="link">
+                    <div class="link-image" style="background-image: url('images/links/git-reg.gif'); background-position: 0 4px;"
+                        onmouseover="this.style.backgroundImage = 'url(images/links/git-hov.gif)'"
+                        onmouseout="this.style.backgroundImage = 'url(images/links/git-reg.gif)'"></div>
+                    <div class="link-title">Git Hub</div>
+                </div>
+            </a>
+            <div class="link" onclick="showEmailModal()">
+                <div class="link-image" style="background-image: url('images/links/email-reg.gif');"></div><!-- Email icon doesn't change so it doesn't get an 'onMouseOver' -->
                 <div class="link-title">Email</div>
             </div>
 
@@ -85,7 +89,21 @@
             </div>
         </div>
 
-
+        <div class="email-modal-darken-screen">
+            <div class="email-modal-container">
+                <div class="email-modal-title-bar"><p>Email Me</p><p title="Close">&#10005;</p></div>
+                <p>Name</p>
+                <input type="text">
+                <p>Email</p>
+                <input type="text">
+                <p>Message</p>
+                <textarea></textarea>
+                <div class="email-modal-buttons">
+                    <button>Submit</button>
+                    <button>Cancel</button>
+                </div>
+            </div>
+        </div>
 
 
 

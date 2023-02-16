@@ -27,7 +27,9 @@ emailModal.addEventListener('click', function(e) {
 
 
 
-
+function scrollToAbout() {
+    document.getElementById('about').scrollIntoView({behavior: 'smooth'});
+}
 
 function showEmailModal() {
     emailModal.classList.toggle('show-hide');

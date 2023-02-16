@@ -497,6 +497,12 @@ a {
         width: 90vw;
         height: calc(90vw * .9);
     }
+
+    /* Makes 'scrollIntoView' stop at an offset position */
+    .about-container { 
+        scroll-margin-top: 200px;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -520,6 +526,11 @@ a {
 
     .email-modal-window {
         width: 90%;
+    }
+
+    /* Makes 'scrollIntoView' stop at an offset position */
+    .about-container {
+        scroll-margin-top: 140px;
     }
 }
 

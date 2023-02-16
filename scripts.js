@@ -5,11 +5,10 @@
 import configData from './projects.json' assert { type: "json" };
 document.querySelector('.about-right-col').innerHTML = JSON.stringify(configData);
 
-// var mydata = JSON.parse(data);
-// alert(mydata[0].name);
-// alert(mydata[0].age);
-// alert(mydata[1].name);
-// alert(mydata[1].age);
+alert(configData[0].title);
+alert(configData[0].type);
+alert(configData[1].status);
+alert(configData[1].description);
 
 
 

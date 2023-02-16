@@ -3,9 +3,7 @@
 //     .then((json) => console.log(json));
 
 import configData from './projects.json';
-console.log(JSON.stringify(configData));
-console.log(' --------------------- ');
-console.log(configData);
+document.querySelector('.about-right-col').innerHTML = JSON.stringify(configData);
 
 // var mydata = JSON.parse(data);
 // alert(mydata[0].name);

@@ -33,7 +33,7 @@ listProjects();
 function listProjects() {
     var projectCount = Object.keys(configData).length;
 
-    for(i=0;i<projectCount;i++) {
+    for(var i=0;i<projectCount;i++) {
         console.log(configData[i].title);
         console.log(configData[i].type);
         console.log(configData[i].status);

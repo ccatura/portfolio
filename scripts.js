@@ -54,3 +54,17 @@ function showPacman() {
 function resetHeading() {
     subHeadingInput.value = subHeadValue;
 }
+
+
+
+
+
+
+
+
+
+
+
+fetch('./projects.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));

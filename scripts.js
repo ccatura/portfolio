@@ -33,7 +33,7 @@ listProjects();
 function listProjects() {
     var projectCount = Object.keys(configData).length;
 
-    for(var i=0;i<projectCount;i++) {
+    for(var i = 0; i < projectCount - 1; i++) {
         document.querySelector('.project-container').innerHTML = `
         <a href='` + (configData[i].url) + `' target='_blank' class='project' rel='nofollow'>
             <div class='project-thumbnail' style='background-image: url(` + (configData[i].image) + `);'>

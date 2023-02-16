@@ -1,7 +1,7 @@
 [
     {
         "title" : "Music Scroller",
-        "type" : "Personal Project",
+        "cat" : "Personal Project",
         "status" : "In Progress",
         "description" : "This is a partially working web-based teleprompter application geared toward song writers who perform on-stage. It is not completed as of yet, but will have the ability to create, edit, share, and display songs like a traditional teleprompter.",
         "languages" : "HTML, CSS, JS, PHP",
@@ -10,7 +10,7 @@
     },
     {
         "title" : "Shared Grocery List",
-        "type" : "Personal Project",
+        "cat" : "Personal Project",
         "status" : "In Progress",
         "description" : "Designed to keep the shopper connected with an at-home partner. Inspired by COVID to reduce the amount of customers inside stores. It will update in real-time when the shopper has crossed-off an item or added/deleted an item. It includes live chat.",
         "languages" : "HTML, CSS, JS, PHP",
@@ -19,7 +19,7 @@
     },
     {
         "title" : "",
-        "type" : "",
+        "cat" : "",
         "status" : "",
         "description" : "",
         "languages" : "",
@@ -28,7 +28,7 @@
     },
     {
         "title" : "",
-        "type" : "",
+        "cat" : "",
         "status" : "",
         "description" : "",
         "languages" : "",
@@ -37,7 +37,7 @@
     },
     {
         "title" : "",
-        "type" : "",
+        "cat" : "",
         "status" : "",
         "description" : "",
         "languages" : "",
@@ -46,7 +46,7 @@
     },
     {
         "title" : "",
-        "type" : "",
+        "cat" : "",
         "status" : "",
         "description" : "",
         "languages" : "",
@@ -55,7 +55,7 @@
     },
     {
         "title" : "",
-        "type" : "",
+        "cat" : "",
         "status" : "",
         "description" : "",
         "languages" : "",
@@ -64,7 +64,7 @@
     },
     {
         "title" : "",
-        "type" : "",
+        "cat" : "",
         "status" : "",
         "description" : "",
         "languages" : "",
@@ -73,7 +73,7 @@
     },
     {
         "title" : "",
-        "type" : "",
+        "cat" : "",
         "status" : "",
         "description" : "",
         "languages" : "",
@@ -82,7 +82,7 @@
     },
     {
         "title" : "",
-        "type" : "",
+        "cat" : "",
         "status" : "",
         "description" : "",
         "languages" : "",
@@ -91,7 +91,7 @@
     },
     {
         "title" : "",
-        "type" : "",
+        "cat" : "",
         "status" : "",
         "description" : "",
         "languages" : "",
@@ -100,7 +100,7 @@
     },
     {
         "title" : "",
-        "type" : "",
+        "cat" : "",
         "status" : "",
         "description" : "",
         "languages" : "",

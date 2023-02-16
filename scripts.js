@@ -32,16 +32,41 @@ emailModal.addEventListener('click', function(e) {
 listProjects();
 function listProjects() {
     var projectCount = Object.keys(configData).length;
+    var projTitle;
+    var projCat;
+    var projStatus;
+    var projDescription;
+    var projLanguages;
+    var projImage;
+    var projUrl;
 
     for(var i = 0; i < projectCount - 1; i++) {
+        projTitle = (configData[i].title);
+        projCat = (configData[i].cat);
+        projStatus = (configData[i].status);
+        projDescription = (configData[i].description);
+        projLanguages = (configData[i].languages);
+        projImage = (configData[i].image);
+        projUrl = (configData[i].url);
+
+        console.log=(projTitle);
+        console.log=(projCat);
+        console.log=(projStatus);
+        console.log=(projDescription);
+        console.log=(projLanguages);
+        console.log=(projImage);
+        console.log=(projUrl);
+        console.log(' ');
+
+
         document.querySelector('.project-container').innerHTML = `
-        <a href='` + configData[i].url + `' target='_blank' class='project' rel='nofollow'>
-            <div class='project-thumbnail' style='background-image: url("` + configData[i].image + `");'>
+        <a href='` + projUrl + `' target='_blank' class='project' rel='nofollow'>
+            <div class='project-thumbnail' style='background-image: url("` + projImage + `");'>
                 <div class='project-description body-copy'>
-                    <b>` + configData[i].type `<br>` + configData[i].status + `</b><br>` + configData[i].description + `.<br><b>` + configData[i].languages + `</b>
+                    <b>` + projCat `<br>` + projStatus + `</b><br>` + projDescription + `.<br><b>` + projLanguages + `</b>
                 </div>
             </div>
-            <div class='project-title'>` + configData[i].title + `</div>
+            <div class='project-title'>` + projTitle + `</div>
         </a>`;
 
 

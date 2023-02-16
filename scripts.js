@@ -49,13 +49,13 @@ function listProjects() {
         projImage = (configData[i].image);
         projUrl = (configData[i].url);
 
-        console.log=(projTitle);
-        console.log=(projCat);
-        console.log=(projStatus);
-        console.log=(projDescription);
-        console.log=(projLanguages);
-        console.log=(projImage);
-        console.log=(projUrl);
+        console.log(projTitle);
+        console.log(projCat);
+        console.log(projStatus);
+        console.log(projDescription);
+        console.log(projLanguages);
+        console.log(projImage);
+        console.log(projUrl);
         console.log(' ');
 
 

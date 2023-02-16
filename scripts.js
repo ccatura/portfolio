@@ -39,8 +39,9 @@ function listProjects() {
     var projLanguages = "";
     var projImage = "";
     var projUrl = "";
+    var htmlOutput = "";
 
-    for(var i = 0; i < projectCount - 1; i++) {
+    for(var i = 0; i < projectCount; i++) {
         projTitle = (configData[i].title);
         projCat = (configData[i].cat);
         projStatus = (configData[i].status);
@@ -49,33 +50,18 @@ function listProjects() {
         projImage = (configData[i].image);
         projUrl = (configData[i].url);
 
-        console.log(projTitle);
-        console.log(projCat);
-        console.log(projStatus);
-        console.log(projDescription);
-        console.log(projLanguages);
-        console.log(projImage);
-        console.log(projUrl);
-        console.log(' ');
-
-
-        document.querySelector('.project-container').innerHTML = `
+        htmlOutput = htmlOutput + `
         <a href='` + projUrl + `' target='_blank' class='project' rel='nofollow'>
             <div class='project-thumbnail' style='background-image: url("` + projImage + `");'>
                 <div class='project-description body-copy'>
-                    <b>` + projCat `<br>` + projStatus + `</b><br>` + projDescription + `.<br><b>` + projLanguages + `</b>
+                    <b>` + projCat + `<br>` + projStatus + `</b><br>` + projDescription + `.<br><b>` + projLanguages + `</b>
                 </div>
             </div>
             <div class='project-title'>` + projTitle + `</div>
         </a>`;
-
-
-
-
-
     }
+    document.querySelector('.project-container').innerHTML = htmlOutput;
 }
-
 
 
 

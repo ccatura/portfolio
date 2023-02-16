@@ -34,23 +34,14 @@ function listProjects() {
     var projectCount = Object.keys(configData).length;
 
     for(var i=0;i<projectCount;i++) {
-        var projTitle = (configData[i].title);
-        console.log(configData[i].type);
-        console.log(configData[i].status);
-        console.log(configData[i].description);
-        console.log(configData[i].languages);
-        console.log(configData[i].image);
-        console.log(configData[i].url);
-        console.log(' ');
-
         document.querySelector('.project-container').innerHTML = `
-        <a href='` + projTitle + `' target='_blank' class='project' rel='nofollow'>
-            <div class='project-thumbnail' style='background-image: url(images/thumbs/music-scroller.jpg);'>
+        <a href='` + (configData[i].url) + `' target='_blank' class='project' rel='nofollow'>
+            <div class='project-thumbnail' style='background-image: url(` + (configData[i].image) + `);'>
                 <div class='project-description body-copy'>
-                    <b>PERSONAL PROJECT<br>IN PROGRESS</b><br>This is a partially working web-based teleprompter application geared toward song writers who perform on-stage. It is not completed as of yet, but will have the ability to create, edit, share, and display songs like a traditional teleprompter.<br><b>HTML, CSS, JS, PHP</b>
+                    <b>` + (configData[i].type) `<br>` + (configData[i].status) + `</b><br>` + (configData[i].description) + `.<br><b>` + (configData[i].languages) + `</b>
                 </div>
             </div>
-            <div class='project-title'>Music Scroller</div>
+            <div class='project-title'>` + (configData[i].title) + `</div>
         </a>`;
 
 

@@ -31,11 +31,18 @@ emailModal.addEventListener('click', function(e) {
 
 listProjects();
 function listProjects() {
-    console.log(Object.keys(configData).length);
-    console.log(configData[0].title);
-    console.log(configData[0].type);
-    console.log(configData[0].status);
-    console.log(configData[0].description);
+    var projectCount = Object.keys(configData).length;
+
+    for(i=0;i<projectCount;i++) {
+        console.log(configData[i].title);
+        console.log(configData[i].type);
+        console.log(configData[i].status);
+        console.log(configData[i].description);
+        console.log(configData[i].languages);
+        console.log(configData[i].image);
+        console.log(configData[i].url);
+        console.log(' ');
+    }
 }
 
 

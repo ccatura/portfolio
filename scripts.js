@@ -2,8 +2,9 @@
 //     .then((response) => response.json())
 //     .then((json) => console.log(json));
 
-const configData = require('./projects.json');
-console.log(typeof configData);
+import configData from './projects.json';
+console.log(JSON.stringify(configData));
+console.log(' --------------------- ');
 console.log(configData);
 
 // var mydata = JSON.parse(data);

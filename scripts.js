@@ -76,3 +76,37 @@ function showPacman() {
 function resetHeading() {
     subHeadingInput.value = subHeadValue;
 }
+
+listProjects();
+function listProjects() {
+    var projectCount = Object.keys(configData).length;
+    var projTitle = "";
+    var projCat = "";
+    var projStatus = "";
+    var projDescription = "";
+    var projLanguages = "";
+    var projImage = "";
+    var projUrl = "";
+    var htmlOutput = "";
+
+    for(var i = 0; i < projectCount; i++) {
+        projTitle = (configData[i].title);
+        projCat = (configData[i].cat);
+        projStatus = (configData[i].status);
+        projDescription = (configData[i].description);
+        projLanguages = (configData[i].languages);
+        projImage = (configData[i].image);
+        projUrl = (configData[i].url);
+
+        htmlOutput = htmlOutput + `
+        <a href='` + projUrl + `' target='_blank' class='project' rel='nofollow'>
+            <div class='project-thumbnail' style='background-image: url("` + projImage + `");'>
+                <div class='project-description body-copy'>
+                    <b>` + projCat + `<br>` + projStatus + `</b><br>` + projDescription + `.<br><b>` + projLanguages + `</b>
+                </div>
+            </div>
+            <div class='project-title'>` + projTitle + `</div>
+        </a>`;
+    }
+    document.querySelector('.project-container').innerHTML = htmlOutput;
+}

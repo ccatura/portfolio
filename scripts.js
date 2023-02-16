@@ -29,7 +29,7 @@ emailModal.addEventListener('click', function(e) {
 
 
 
-
+listProjects();
 function listProjects() {
     console.log(Object.keys(configData).length);
     console.log(configData[0].title);

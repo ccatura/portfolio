@@ -35,13 +35,13 @@ function listProjects() {
 
     for(var i = 0; i < projectCount - 1; i++) {
         document.querySelector('.project-container').innerHTML = `
-        <a href='` + (configData[i].url) + `' target='_blank' class='project' rel='nofollow'>
-            <div class='project-thumbnail' style='background-image: url(` + (configData[i].image) + `);'>
+        <a href='` + configData[i].url + `' target='_blank' class='project' rel='nofollow'>
+            <div class='project-thumbnail' style='background-image: url("` + configData[i].image + `");'>
                 <div class='project-description body-copy'>
-                    <b>` + (configData[i].type) `<br>` + (configData[i].status) + `</b><br>` + (configData[i].description) + `.<br><b>` + (configData[i].languages) + `</b>
+                    <b>` + configData[i].type `<br>` + configData[i].status + `</b><br>` + configData[i].description + `.<br><b>` + configData[i].languages + `</b>
                 </div>
             </div>
-            <div class='project-title'>` + (configData[i].title) + `</div>
+            <div class='project-title'>` + configData[i].title + `</div>
         </a>`;
 
 

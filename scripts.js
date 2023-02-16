@@ -2,7 +2,7 @@
 //     .then((response) => response.json())
 //     .then((json) => console.log(json));
 
-import configData from './projects.json';
+import configData from './projects.json' assert { type: "json" };
 document.querySelector('.about-right-col').innerHTML = JSON.stringify(configData);
 
 // var mydata = JSON.parse(data);

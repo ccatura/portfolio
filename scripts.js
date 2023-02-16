@@ -29,7 +29,7 @@ emailModal.addEventListener('click', function(e) {
 
 
 
-listProjects();
+
 function listProjects() {
     var projectCount = Object.keys(configData).length;
     var projTitle = "";
@@ -63,10 +63,6 @@ function listProjects() {
     document.querySelector('.project-container').innerHTML = htmlOutput;
 }
 
-
-
-
-
 function scrollToAbout() {
     document.getElementById('about').scrollIntoView({behavior: 'smooth'});
 }
@@ -96,3 +92,7 @@ function resetHeading() {
 }
 
 
+
+
+
+listProjects();

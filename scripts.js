@@ -1,3 +1,20 @@
+// fetch('./projects.json')
+//     .then((response) => response.json())
+//     .then((json) => console.log(json));
+
+const configData = require('./projects.json');
+console.log(typeof configData);
+console.log(configData);
+
+// var mydata = JSON.parse(data);
+// alert(mydata[0].name);
+// alert(mydata[0].age);
+// alert(mydata[1].name);
+// alert(mydata[1].age);
+
+
+
+
 var subHeadingInput = document.getElementById('sub-heading-input');
 var subHeadValue = subHeadingInput.value;
 var pacman = document.getElementById('pacman');
@@ -56,15 +73,3 @@ function resetHeading() {
 }
 
 
-
-
-
-
-
-
-
-
-
-fetch('./projects.json')
-    .then((response) => response.json())
-    .then((json) => console.log(json));

@@ -32,13 +32,13 @@ emailModal.addEventListener('click', function(e) {
 listProjects();
 function listProjects() {
     var projectCount = Object.keys(configData).length;
-    var projTitle;
-    var projCat;
-    var projStatus;
-    var projDescription;
-    var projLanguages;
-    var projImage;
-    var projUrl;
+    var projTitle = "";
+    var projCat = "";
+    var projStatus = "";
+    var projDescription = "";
+    var projLanguages = "";
+    var projImage = "";
+    var projUrl = "";
 
     for(var i = 0; i < projectCount - 1; i++) {
         projTitle = (configData[i].title);

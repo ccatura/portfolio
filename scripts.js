@@ -1,22 +1,4 @@
-// fetch('./projects.json')
-//     .then((response) => response.json())
-//     .then((json) => console.log(json));
-
-import configData from './projects.json' assert { type: "json" };
-document.querySelector('.about-right-col').innerHTML = JSON.stringify(configData);
-
-console.log(configData[0].title);
-console.log(configData[0].type);
-console.log(configData[0].status);
-console.log(configData[0].description);
-console.log('');
-console.log(configData[1].title);
-console.log(configData[1].type);
-console.log(configData[1].status);
-console.log(configData[1].description);
-
-
-
+import configData from './projects.json' assert { type: "json" }; //import projects from json file
 
 var subHeadingInput = document.getElementById('sub-heading-input');
 var subHeadValue = subHeadingInput.value;
@@ -41,6 +23,20 @@ emailModal.addEventListener('click', function(e) {
         showEmailModal();
     }
 });
+
+
+
+
+
+
+
+function listProjects() {
+    console.log(Object.keys(configData).length);
+    console.log(configData[0].title);
+    console.log(configData[0].type);
+    console.log(configData[0].status);
+    console.log(configData[0].description);
+}
 
 
 

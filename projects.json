@@ -86,20 +86,11 @@
         "status" : "Complete",
         "description" : "This calculator can sum up a day's work in my previous photography department, giving the user a 'score' for each photographer's day's work.",
         "languages" : "HTML, CSS, JS",
-        "image" : "images/thumbs/quota.jpg",
+        "image" : "images/thumbs/quot-calc.jpg",
         "url" : "/apps/quota-calculator/"
     },
     {
         "title" : "Stereogram Maker",
-        "cat" : " ",
-        "status" : " ",
-        "description" : " ",
-        "languages" : " ",
-        "image" : " ",
-        "url" : " "
-    },
-    {
-        "title" : " ",
         "cat" : " ",
         "status" : " ",
         "description" : " ",

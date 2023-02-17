@@ -27,70 +27,70 @@
         "url" : "/apps/vade-inspacers/"
     },
     {
-        "title" : " ",
-        "cat" : " ",
-        "status" : " ",
+        "title" : "UT Symptom Checker",
+        "cat" : "Work Project",
+        "status" : "Complete",
+        "description" : "A simple symptom assesment page I made for University of Tennessee.",
+        "languages" : "HTML, CSS, JS",
+        "image" : "images/thumbs/symptom-checker.jpg",
+        "url" : "#"
+    },
+    {
+        "title" : "The Mason Center",
+        "cat" : "Professional Project",
+        "status" : "In Progress",
+        "description" : "WordPress build. More info to come.",
+        "languages" : "WordPress",
+        "image" : "images/thumbs/mason-center.jpg",
+        "url" : "#"
+    },
+    {
+        "title" : "Ortho TN",
+        "cat" : "Professional Project",
+        "status" : "In Progress",
+        "description" : "WordPress build. More info to come.",
+        "languages" : "WordPress",
+        "image" : "images/thumbs/ortho.jpg",
+        "url" : "#"
+    },
+    {
+        "title" : "Chord Remover",
+        "cat" : "Personal Project",
+        "status" : "In Progress",
         "description" : " ",
         "languages" : " ",
         "image" : " ",
         "url" : " "
     },
     {
-        "title" : " ",
-        "cat" : " ",
-        "status" : " ",
-        "description" : " ",
-        "languages" : " ",
+        "title" : "My Links",
+        "cat" : "Personal Project",
+        "status" : "In Progress",
+        "description" : "This is a personal links catalogue for personal use.",
+        "languages" : "HTML, CSS, JS, PHP",
         "image" : " ",
         "url" : " "
     },
     {
-        "title" : " ",
-        "cat" : " ",
-        "status" : " ",
-        "description" : " ",
-        "languages" : " ",
-        "image" : " ",
+        "title" : "Quasar Image Database",
+        "cat" : "Personal/Professiona Project",
+        "status" : "In Progress",
+        "description" : "This is a personal project that I am revamping for my employer. The original is a featurelss Windows application that has many limits. It is being recreated as a cross-platform web app.",
+        "languages" : "HTML, CSS, JS, PHP",
+        "image" : "images/thumbs/quasar.jpg",
         "url" : " "
     },
     {
-        "title" : " ",
-        "cat" : " ",
-        "status" : " ",
-        "description" : " ",
-        "languages" : " ",
-        "image" : " ",
-        "url" : " "
+        "title" : "Quota Calculator",
+        "cat" : "Personal/Professiona Project",
+        "status" : "Complete",
+        "description" : "This calculator can sum up a day's work in my previous photography department, giving the user a 'score' for each photographer's day's work.",
+        "languages" : "HTML, CSS, JS",
+        "image" : "images/thumbs/quota.jpg",
+        "url" : "/apps/quota-calculator/"
     },
     {
-        "title" : " ",
-        "cat" : " ",
-        "status" : " ",
-        "description" : " ",
-        "languages" : " ",
-        "image" : " ",
-        "url" : " "
-    },
-    {
-        "title" : " ",
-        "cat" : " ",
-        "status" : " ",
-        "description" : " ",
-        "languages" : " ",
-        "image" : " ",
-        "url" : " "
-    },
-    {
-        "title" : " ",
-        "cat" : " ",
-        "status" : " ",
-        "description" : " ",
-        "languages" : " ",
-        "image" : " ",
-        "url" : " "
-    },
-    {
-        "title" : " ",
+        "title" : "Stereogram Maker",
         "cat" : " ",
         "status" : " ",
         "description" : " ",

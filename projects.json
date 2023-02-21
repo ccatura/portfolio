@@ -13,15 +13,15 @@
         "cat" : "Personal Project",
         "status" : "In Progress",
         "description" : "Designed to keep the shopper connected with an at-home partner. Inspired by COVID to reduce the amount of customers inside stores. It will update in real-time when the shopper has crossed-off an item or added/deleted an item. It includes live chat.",
-        "languages" : "HTML, CSS, JS, PHP",
+        "languages" : "HTML, CSS, JS, PHP, Ajax",
         "image" : "images/thumbs/shared-grocery-list.jpg",
-        "url" : "/apps/shared-grocery-list/"
+        "url" : "/apps/shared-grocery-list/view-list.html"
     },
     {
         "title" : "Vade Inspacers",
         "cat" : "School Project",
         "status" : "Complete",
-        "description" : "This is a simple version of a game inspired by the popular game Space Invaders.",
+        "description" : "This is a simplified version of a game inspired by the popular game Space Invaders.",
         "languages" : "HTML, CSS, JS, jQuery",
         "image" : "images/thumbs/vade-inspacers.jpg",
         "url" : "/apps/vade-inspacers/"
@@ -30,7 +30,7 @@
         "title" : "UT Symptom Checker",
         "cat" : "Work Project",
         "status" : "Complete",
-        "description" : "A simple symptom assesment page I made for University of Tennessee.",
+        "description" : "A symptom assesment page that redirects the user to the proper channels. built for the University of Tennessee, Knoxville.",
         "languages" : "HTML, CSS, JS",
         "image" : "images/thumbs/symptom-checker.jpg",
         "url" : "#"
@@ -69,7 +69,7 @@
         "description" : "This is a personal links catalogue for personal use.",
         "languages" : "HTML, CSS, JS, PHP",
         "image" : " ",
-        "url" : " "
+        "url" : "/apps/my-links/"
     },
     {
         "title" : "Quasar Image Database",
@@ -78,7 +78,7 @@
         "description" : "This is a personal project that I am revamping for my employer. The original is a featurelss Windows application that has many limits. It is being recreated as a cross-platform web app.",
         "languages" : "HTML, CSS, JS, PHP",
         "image" : "images/thumbs/quasar.jpg",
-        "url" : " "
+        "url" : "/apps/quasar/"
     },
     {
         "title" : "Quota Calculator",

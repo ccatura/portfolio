@@ -65,7 +65,7 @@ function showPacman() {
         pacman.style.width = "400px";
         setTimeout(() => {
             pacman.style.opacity = "0";
-            pacman.style.width = "0";    
+            pacman.style.width = "0";
         }, 3000);
 
         resetHeading();

@@ -1,5 +1,14 @@
 [
     {
+        "title" : "Photo Time Estimator",
+        "cat" : "Personal/Professiona Project",
+        "status" : "In Progress",
+        "description" : "You can estimate how long a batch of images will take to photograph. Average times are hard-coded, but you can opt to enter times manually. This helps at my photography job, to give clients a good estimate on when their product will be complete.",
+        "languages" : "HTML, CSS, JS",
+        "image" : "images/thumbs/photo-estimator.jpg",
+        "url" : "/apps/photo-time-estimator/"
+    },
+    {
         "title" : "Music Scroller",
         "cat" : "Personal Project",
         "status" : "In Progress",
@@ -97,14 +106,5 @@
         "languages" : " ",
         "image" : " ",
         "url" : " "
-    },
-    {
-        "title" : "Photo Time Estimator",
-        "cat" : "Personal/Professiona Project",
-        "status" : "In Progress",
-        "description" : "You can estimate how long a batch of images will take to photograph. Average times are hard-coded, but you can opt to enter times manually. This helps at my photography job, to give clients a good estimate on when their product will be complete.",
-        "languages" : "HTML, CSS, JS",
-        "image" : "images/thumbs/photo-estimator.jpg",
-        "url" : "/apps/photo-time-estimator/"
     }
 ]

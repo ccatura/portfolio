@@ -8,6 +8,16 @@ var pacman              = document.getElementById('pacman');
 var subHeadingInput     = document.getElementById('sub-heading-input');
 var subHeadValue        = subHeadingInput.value;
 
+// Calculate year for specific element inner text
+window.addEventListener('load', function() {
+    const d = new Date();
+    let year = d.getFullYear();
+    var calcYears = document.getElementsByName('calcyear');
+    calcYears.forEach(element => {
+        element.innerText = (year - (element.getAttribute('value')));
+    });
+});
+
 clickEmailModal.addEventListener('click', function() {
     showEmailModal();
 });
@@ -37,6 +47,8 @@ subHeadingInput.addEventListener('focusout', function() {
 subHeadingInput.addEventListener('change', function() {
     showPacman();
 });
+
+
 
 
 

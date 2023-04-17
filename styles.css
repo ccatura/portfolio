@@ -59,7 +59,7 @@ a {
 }
 
 .body-copy {
-    font-family: Kernel Panic;
+    font-family: arial;
     font-size: 1.1em;
 }
 
@@ -548,3 +548,10 @@ a {
     }
 
 }
+
+@media (pointer: coarse) {
+    .project-description {
+        opacity: 1;
+    }
+}
+

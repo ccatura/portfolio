@@ -104,7 +104,7 @@
         "status" : "In Progress",
         "description" : "When completed, the Stereogram Maker will be able to receive 2 similar images from the user and place them side-by-side to make a cross-eye or paralell stereogram. It will also have the ability to output the final product as a single image.",
         "languages" : "HTML, CSS, JS",
-        "image" : "",
+        "image" : " ",
         "url" : "/apps/stereogram-make/"
     }
 ]

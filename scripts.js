@@ -61,6 +61,7 @@ subHeadingInput.addEventListener('change', function() {
 
 
 
+
 function showEmailModal() {
     emailModal.classList.toggle('show-hide');
 }

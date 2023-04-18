@@ -29,8 +29,8 @@
     {
         "title" : "Ortho TN",
         "cat" : "Professional Project",
-        "status" : "In Progress",
-        "description" : "This page was a massive team effort, built from the ground up, from concept to completion, using WordPress and the Themeco plugin Cornerstone. It includes use of custom fields, custom post types, PHP custom code, and much more.",
+        "status" : "Complete",
+        "description" : "I was happy to be part of this massive team effort to build Otho TN from the ground up from concept to completion, using WordPress and the Themeco plugin Cornerstone. It includes use of custom fields, custom post types, PHP custom code, and much more. Built to be user-friendly to the PR team when adding, removing, or revising content without the help of the development team.",
         "languages" : "WordPress, PHP, JS, CSS",
         "image" : "images/thumbs/ortho.jpg",
         "url" : "https://www.orthotn.com/"
@@ -39,7 +39,7 @@
         "title" : "UT Self Health",
         "cat" : "Professional Project",
         "status" : "Complete",
-        "description" : "A symptom assesment page that redirects the user to the proper channels. Built for the University of Tennessee in Knoxville.",
+        "description" : "One of my first projects at my previous Web Development job at Moxley Carmichael. This is a symptom assesment page that redirects the user to the proper channels. Built for the University of Tennessee in Knoxville.",
         "languages" : "HTML, CSS, JS",
         "image" : "images/thumbs/symptom-checker.jpg",
         "url" : "https://selfhealth.tennessee.edu/"
@@ -48,7 +48,7 @@
         "title" : "Tiger Haven",
         "cat" : "Professional Project",
         "status" : "In Progress",
-        "description" : "This page was built from the ground up, from concept to completion, using WordPress and the Themeco plugin Cornerstone. It includes use of custom fields and custom post types.",
+        "description" : "Another Moxley Carmichael project, this page was built from the ground up, from concept to completion, using WordPress and the Themeco plugin Cornerstone. It includes use of custom fields and custom post types.",
         "languages" : "WordPress, JS, CSS",
         "image" : "images/thumbs/tiger-haven.jpg",
         "url" : "https://tigerhaven.wpengine.com/"
@@ -70,15 +70,6 @@
         "languages" : "HTML, CSS, JS, jQuery",
         "image" : "images/thumbs/vade-inspacers.jpg",
         "url" : "/apps/vade-inspacers/"
-    },
-    {
-        "title" : "My Links",
-        "cat" : "Personal Project",
-        "status" : "In Progress",
-        "description" : "This is a personal links catalogue for personal use.",
-        "languages" : "HTML, CSS, JS, PHP",
-        "image" : " ",
-        "url" : "/apps/my-links/"
     },
     {
         "title" : "Quasar Image Database",
@@ -105,6 +96,6 @@
         "description" : "When completed, the Stereogram Maker will be able to receive 2 similar images from the user and place them side-by-side to make a cross-eye or paralell stereogram. It will also have the ability to output the final product as a single image.",
         "languages" : "HTML, CSS, JS",
         "image" : " ",
-        "url" : "/apps/stereogram-make/"
+        "url" : "/apps/stereogram-maker/"
     }
 ]

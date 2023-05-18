@@ -1,5 +1,14 @@
 [
     {
+        "title" : "Did I Pay It?",
+        "cat" : "Personal Project",
+        "status" : "In Progress",
+        "description" : "This is a user-friendly application that allows you to keep track of your monthly bills with ease. Simply create boards, add payees, and check off the checkbox next to them to indicate that you have paid your bill. Your bill tracking data is securely stored in the cloud and can be accessed from any device with an internet connection. To get started, log in below or create a new account.",
+        "languages" : "HTML, CSS, JS, PHP",
+        "image" : "images/thumbs/didipayit.jpg",
+        "url" : "/apps/did-i-pay-it/"
+    },
+    {
         "title" : "Photo Time Estimator",
         "cat" : "Personal/Professional Project",
         "status" : "In Progress",

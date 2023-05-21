@@ -1,7 +1,10 @@
-import configData from './projects.json' assert { type: "json" }; //import projects from json file
+import projectsData from './projects.json' assert { type: "json" }; //import projects from json file
 
 var clickEmailModal     = document.getElementById('click-email-modal');
 var emailModal          = document.getElementById('email-modal');
+var emailName           = document.getElementsByName('name');
+var emailEmail          = document.getElementsByName('email');
+var emailMessage        = document.getElementsByName('message');
 var closeEmailModal     = document.getElementById('close-email-modal');
 var clickAbout          = document.getElementById('click-about');
 var pacman              = document.getElementById('pacman');
@@ -20,6 +23,9 @@ window.addEventListener('load', function() {
 
 clickEmailModal.addEventListener('click', function() {
     showEmailModal();
+    emailName[0].value = '';
+    emailEmail[0].value = '';
+    emailMessage[0].value = '';
 });
 
 closeEmailModal.addEventListener('click', function() {
@@ -92,7 +98,7 @@ function resetHeading() {
 
 listProjects();
 function listProjects() {
-    var projectCount = Object.keys(configData).length;
+    var projectCount = Object.keys(projectsData).length;
     var projTitle = "";
     var projCat = "";
     var projStatus = "";
@@ -103,13 +109,13 @@ function listProjects() {
     var htmlOutput = "";
 
     for(var i = 0; i < projectCount; i++) {
-        projTitle = (configData[i].title);
-        projCat = (configData[i].cat);
-        projStatus = (configData[i].status);
-        projDescription = (configData[i].description);
-        projLanguages = (configData[i].languages);
-        projImage = (configData[i].image);
-        projUrl = (configData[i].url);
+        projTitle = (projectsData[i].title);
+        projCat = (projectsData[i].cat);
+        projStatus = (projectsData[i].status);
+        projDescription = (projectsData[i].description);
+        projLanguages = (projectsData[i].languages);
+        projImage = (projectsData[i].image);
+        projUrl = (projectsData[i].url);
 
         htmlOutput = htmlOutput + `
         <a href='` + projUrl + `' target='_blank' class='project' rel='nofollow'>

@@ -7,7 +7,7 @@
     $message = "New message from your portfolio page from <strong>" . $name . "</strong> (" . $email . ")<br><hr>";
     $message .= $_POST['message'];
 
-    $header[] = "From: $name <$email>";
+    $header[] = "From: $name &lt;$email&gt;";
     $header[] = "MIME-Version: 1.0";
     $header[] = "Content-type: text/html";
 

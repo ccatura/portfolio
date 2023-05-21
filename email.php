@@ -7,18 +7,20 @@
     $message = "New message from your portfolio page from <strong>" . $name . "</strong> (" . $email . ")<br><hr>";
     $message .= $_POST['message'];
 
-    $header = "From: $email \r\n";
-    //  $header .= "Cc:afgh@somedomain.com \r\n";
-    $header .= "MIME-Version: 1.0\r\n";
-    $header .= "Content-type: text/html\r\n";
+    $header[] = "From: $name <$email>";
+    $header[] = "MIME-Version: 1.0";
+    $header[] = "Content-type: text/html";
 
-    $sendmail = mail ($to, $subject, $message, $header,  '-f ' . $email . ' -F "' . $name . '"');
-
+    // $sendmail = mail ($to, $subject, $message, $header);
+    $sandmail = mail($to, $subject, $message, implode("\r\n", $header));
     if( $sendmail == true ) {
         echo "<h1>Your message was sent successfully!</h1><h3><a href='./'>Click here to go back</a></h3>";
         echo $message . "<br><br>";
-        echo $header;
+        echo implode("\r\n", $header);
     } else {
         echo "<h1>Message could not be sent.</h1><h3><a href='./'>Click here to try again</a></h3>";
     }
 ?>
+
+
+<!-- ,  '-f ' . $email . ' -F "' . $name . '"' -->

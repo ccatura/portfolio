@@ -12,7 +12,7 @@
     $header .= "MIME-Version: 1.0\r\n";
     $header .= "Content-type: text/html\r\n";
 
-    $sendmail = mail ($to, $subject, $message, $header,  '-F "' . $name . '"');
+    $sendmail = mail ($to, $subject, $message, $header,  '-f ' . $email . ' -F "' . $name . '"');
 
     if( $sendmail == true ) {
         echo "<h1>Your message was sent successfully!</h1><h3><a href='./'>Click here to go back</a></h3>";

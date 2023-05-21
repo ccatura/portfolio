@@ -4,10 +4,10 @@
     $email = $_POST['email'];
     $name = $_POST['name'];
 
-    $message = 'New message from your portfolio page from <strong>' . $name . '</strong> (' . $email . ')<br><hr><br>';
+    $message = 'New message from your portfolio page from <strong>' . $name . '</strong> (' . $email . ')<br><hr>';
     $message .= $_POST['message'];
 
-    $header = "From:'$email' \r\n";
+    $header = "From:$email \r\n";
     //  $header .= "Cc:afgh@somedomain.com \r\n";
     $header .= "MIME-Version: 1.0\r\n";
     $header .= "Content-type: text/html\r\n";

@@ -16,6 +16,8 @@
 
     if( $sendmail == true ) {
         echo "<h1>Your message was sent successfully!</h1><h3><a href='./'>Click here to go back</a></h3>";
+        echo $message;
+        echo $header;
     } else {
         echo "<h1>Message could not be sent.</h1><h3><a href='./'>Click here to try again</a></h3>";
     }

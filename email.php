@@ -13,7 +13,7 @@
 
     // $sendmail = mail ($to, $subject, $message, $header);
     $sendmail = mail($to, $subject, $message, implode("\r\n", $header));
-    
+
     if( $sendmail == true ) {
         echo "<h1>Your message was sent successfully!</h1><h3><a href='./'>Click here to go back</a></h3>";
         echo $message . "<br><br>";

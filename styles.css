@@ -280,7 +280,7 @@ a {
 }
 
 .project:hover .project-description {
-    opacity: 1;
+    opacity: .8;
     transform: translate(-50%, -50%) scale(1.1);
 }
 
@@ -339,7 +339,7 @@ a {
 
 .about-right-col p {
     margin-bottom: 1em;
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: var(--body-copy-color-light);
     text-shadow: var(--shadow-far);
 }
@@ -507,7 +507,7 @@ a {
 
 @media screen and (max-width: 600px) {
     .about-right-col p {
-        font-size: 1.1em;
+        font-size: .9em;
     }
 
     .link-image {
@@ -551,7 +551,7 @@ a {
 
 @media (pointer: coarse) {
     .project-description {
-        opacity: 1;
+        opacity: .8;
     }
 
     .project-thumbnail::before {

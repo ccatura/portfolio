@@ -2,6 +2,7 @@ import projectsData from './projects.json' assert { type: "json" }; //import pro
 
 var clickEmailModal     = document.getElementById('click-email-modal');
 var emailModal          = document.getElementById('email-modal');
+var sendEmailButton     = document.getElementById('send-email');
 var emailName           = document.getElementsByName('name');
 var emailEmail          = document.getElementsByName('email');
 var emailMessage        = document.getElementsByName('message');
@@ -26,6 +27,10 @@ clickEmailModal.addEventListener('click', function() {
     emailName[0].value = '';
     emailEmail[0].value = '';
     emailMessage[0].value = '';
+});
+
+sendEmailButton.addEventListener('click', function() {
+    showEmailModal();
 });
 
 closeEmailModal.addEventListener('click', function() {
@@ -121,7 +126,7 @@ function listProjects() {
         <a href='` + projUrl + `' target='_blank' class='project' rel='nofollow'>
             <div class='project-thumbnail' style='background-image: url("` + projImage + `");'>
                 <div class='project-description body-copy'>
-                    <b>` + projCat + `<br>` + projStatus + `</b><br>` + projDescription + `.<br><b>` + projLanguages + `</b>
+                    <b>` + projCat + `<br>` + projStatus + `</b><br>` + projDescription + `<br><b>` + projLanguages + `</b>
                 </div>
             </div>
             <div class='project-title'>` + projTitle + `</div>

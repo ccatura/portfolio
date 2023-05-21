@@ -11,7 +11,6 @@
     $header[] = "MIME-Version: 1.0";
     $header[] = "Content-type: text/html";
 
-    // $sendmail = mail ($to, $subject, $message, $header);
     $sendmail = mail($to, $subject, $message, implode("\r\n", $header));
 
     if( $sendmail == true ) {
@@ -23,5 +22,3 @@
     }
 ?>
 
-
-<!-- ,  '-f ' . $email . ' -F "' . $name . '"' -->

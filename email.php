@@ -2,8 +2,10 @@
     $to = "ccatura@gmail.com";
     $subject = $_POST['subject'];
     $email = $_POST['email'];
+    $name = $_POST['name'];
 
-    $message = $_POST['message'];
+    $message = 'New message from your portfolio page from <strong>' . $name . '</strong> (' . $email . ')<br><hr><br>';
+    $message .= $_POST['message'];
 
     $header = "From:'$email' \r\n";
     //  $header .= "Cc:afgh@somedomain.com \r\n";

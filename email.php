@@ -15,11 +15,11 @@
     $sendmail = mail($to, $subject, $message, implode("\r\n", $header));
 
     if( $sendmail == true ) {
-        echo "<h1>Your message was sent successfully!</h1><h3><a href='#' onclick='close_window();return false;'>Click here to close this tab.</a></h3>";
+        echo "<h1>Your message was sent successfully!</h1><h3><a href='#' onclick='close();return false;'>Click here to close this tab.</a></h3>";
         echo $message . "<br><br>";
         echo implode("\r\n", $header);
     } else {
-        echo "<h1>Message could not be sent.</h1><h3><a href='#' onclick='close_window();return false;'>Click here to try again.</a></h3>";
+        echo "<h1>Message could not be sent.</h1><h3><a href='#' onclick='close();return false;'>Click here to try again.</a></h3>";
     }
 ?>
 

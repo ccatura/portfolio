@@ -11,6 +11,16 @@ var clickAbout          = document.getElementById('click-about');
 var pacman              = document.getElementById('pacman');
 var subHeadingInput     = document.getElementById('sub-heading-input');
 var subHeadValue        = subHeadingInput.value;
+var math                = document.getElementById('math');
+var mathInput           = document.getElementById('math-input');
+
+const a = Math.floor(Math.random() * 10) + 1;
+const b = Math.floor(Math.random() * 10) + 1;
+const c = a + b;
+const d = 'What is ' + a + '+' + b + '?';
+math.innerText = d;
+mathInput.placeholder = d;
+
 
 // Calculate year for specific element inner text
 window.addEventListener('load', function() {
@@ -30,7 +40,12 @@ clickEmailModal.addEventListener('click', function() {
 });
 
 sendEmailButton.addEventListener('click', function() {
-    showEmailModal();
+    if (mathInput.value == c) {
+        showEmailModal();
+    } else {
+        preventdefault();
+        return false;
+    }
 });
 
 closeEmailModal.addEventListener('click', function() {

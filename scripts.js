@@ -21,6 +21,13 @@ const d = 'What is ' + a + '+' + b + '?';
 math.innerText = d;
 mathInput.placeholder = d;
 
+mathInput.addEventListener('input', function() {
+    if (mathInput.value == c) {
+        sendEmailButton.disabled = false;
+    } else {
+        sendEmailButton.disabled = true;
+    }
+});
 
 // Calculate year for specific element inner text
 window.addEventListener('load', function() {
@@ -39,13 +46,8 @@ clickEmailModal.addEventListener('click', function() {
     emailMessage[0].value = '';
 });
 
-sendEmailButton.addEventListener('click', function() {
-    if (mathInput.value == c) {
+sendEmailButton.addEventListener('click', function(e) {
         showEmailModal();
-    } else {
-        preventdefault();
-        return false;
-    }
 });
 
 closeEmailModal.addEventListener('click', function() {

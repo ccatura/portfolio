@@ -3,8 +3,10 @@
     $subject = $_POST['subject'];
     $email = $_POST['email'];
     $name = $_POST['name'];
+    $answer = $_POST['math'];
 
-    $message = "New message from your portfolio page from <strong>" . $name . "</strong> (" . $email . ")<br><hr>";
+    $message  = "(The answer is: <strong>" . $answer . "</strong>)<br>";
+    $message .= "New message from your portfolio page from <strong>" . $name . "</strong> (" . $email . ")<br><hr>";
     $message .= $_POST['message'];
 
     $header[] = "From: $email";

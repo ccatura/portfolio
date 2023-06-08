@@ -13,19 +13,29 @@ var subHeadingInput     = document.getElementById('sub-heading-input');
 var subHeadValue        = subHeadingInput.value;
 var math                = document.getElementById('math');
 var mathInput           = document.getElementById('math-input');
+var message             = document.getElementById('message')
+var xx;
 
 const a = Math.floor(Math.random() * 10) + 1;
 const b = Math.floor(Math.random() * 10) + 1;
 const c = a + b;
-const d = 'What is ' + a + '+' + b + '?';
+const d = 'Add ' + a + ' to ' + b + ' and type the answer.';
 math.innerText = d;
-mathInput.placeholder = d;
+mathInput.placeholder = 'Your answer:';
 
 mathInput.addEventListener('input', function() {
     if (mathInput.value == c) {
-        sendEmailButton.disabled = false;
+        message.style.display = "block";
+        xx = setTimeout(function() {
+            sendEmailButton.disabled = false;
+            sendEmailButton.style.display = "block";
+            message.style.display = "none";
+        }, 5000);
     } else {
         sendEmailButton.disabled = true;
+        sendEmailButton.style.display = "none";
+        message.style.display = "none";
+        clearTimeout(xx);
     }
 });
 

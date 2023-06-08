@@ -181,10 +181,11 @@
                     <input  type="email" name="email" placeholder="Your Email Address" required>
                     <p>Message</p>
                     <textarea name="message" placeholder="Your message here." required></textarea>
-                    <p>What is <span id="math"></span></p>
+                    <p><span id="math"></span></p>
                     <input  type="number" name="math" placeholder="Your Answer" required id="math-input">
                     <div class="email-modal-buttons">
-                        <input id="send-email" type="submit" name="submit" value="Send" disabled>
+                        <div id="message" style="display:none;">Loading Send button...</div>
+                        <input id="send-email" type="submit" name="submit" value="Send" disabled style="font-size:20px;padding:5px;margin-top:5px;display:none;">
                     </div>
                 </div>
             </div>

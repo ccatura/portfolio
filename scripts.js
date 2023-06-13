@@ -29,11 +29,13 @@ mathInput.addEventListener('input', function() {
         xx = setTimeout(function() {
             sendEmailButton.disabled = false;
             sendEmailButton.style.display = "block";
+            sendEmailButton.type = "submit";
             message.style.display = "none";
         }, 5000);
     } else {
         sendEmailButton.disabled = true;
         sendEmailButton.style.display = "none";
+        sendEmailButton.type = "hidden";
         message.style.display = "none";
         clearTimeout(xx);
     }

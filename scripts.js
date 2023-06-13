@@ -23,7 +23,7 @@ const d = 'Add ' + a + ' to ' + b + ' and type the answer.';
 math.innerText = d;
 mathInput.placeholder = 'Your answer:';
 
-mathInput.addEventListener('input', function() {
+mathInput.addEventListener('change', function() {
     if (mathInput.value == c) {
         message.style.display = "block";
         xx = setTimeout(function() {

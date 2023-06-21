@@ -3,9 +3,9 @@
     $subject = $_POST['subject'];
     $email = $_POST['email'];
     $name = $_POST['name'];
-    $answer = $_POST['math'];
+    $good_to_go = $_POST['good-to-go'];
 
-    $message  = "(The answer is: <strong>" . $answer . "</strong>)<br>";
+    $message = "Good to go? " . $good_to_go . "<br>";
     $message .= "New message from your portfolio page from <strong>" . $name . "</strong> (" . $email . ")<br><hr>";
     $message .= $_POST['message'];
 

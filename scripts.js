@@ -11,35 +11,14 @@ var clickAbout          = document.getElementById('click-about');
 var pacman              = document.getElementById('pacman');
 var subHeadingInput     = document.getElementById('sub-heading-input');
 var subHeadValue        = subHeadingInput.value;
-var math                = document.getElementById('math');
-var mathInput           = document.getElementById('math-input');
-var message             = document.getElementById('message')
-var xx;
+var goodToGo            = document.getElementById('good-to-go');
+var goodToGoInput       = document.getElementsByName('good-to-go');
 
-const a = Math.floor(Math.random() * 10) + 1;
-const b = Math.floor(Math.random() * 10) + 1;
-const c = a + b;
-const d = 'Add ' + a + ' to ' + b + ' and type the answer.';
-math.innerText = d;
-mathInput.placeholder = 'Your answer:';
-
-mathInput.addEventListener('change', function() {
-    if (mathInput.value == c) {
-        message.style.display = "block";
-        xx = setTimeout(function() {
-            sendEmailButton.disabled = false;
-            sendEmailButton.style.display = "block";
-            sendEmailButton.type = "submit";
-            sendEmailButton.name = "submit";
-            message.style.display = "none";
-        }, 5000);
+goodToGo.addEventListener('click', function() {
+    if (goodToGo.checked == false) {
+        goodToGoInput[0].value = true;
     } else {
-        sendEmailButton.disabled = true;
-        sendEmailButton.style.display = "none";
-        sendEmailButton.type = "hidden";
-        sendEmailButton.name = "";
-        message.style.display = "none";
-        clearTimeout(xx);
+        goodToGoInput[0].value = false;
     }
 });
 
@@ -53,6 +32,7 @@ window.addEventListener('load', function() {
     });
 });
 
+// Clears the answers to the form once the submit button is clicked
 clickEmailModal.addEventListener('click', function() {
     showEmailModal();
     emailName[0].value = '';
@@ -60,10 +40,12 @@ clickEmailModal.addEventListener('click', function() {
     emailMessage[0].value = '';
 });
 
+// Toggles off email modal when submit button is clicked
 sendEmailButton.addEventListener('click', function(e) {
         showEmailModal();
 });
 
+// Close email modal
 closeEmailModal.addEventListener('click', function() {
     showEmailModal();
 });

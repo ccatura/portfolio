@@ -30,12 +30,14 @@ mathInput.addEventListener('change', function() {
             sendEmailButton.disabled = false;
             sendEmailButton.style.display = "block";
             sendEmailButton.type = "submit";
+            sendEmailButton.name = "submit";
             message.style.display = "none";
         }, 5000);
     } else {
         sendEmailButton.disabled = true;
         sendEmailButton.style.display = "none";
         sendEmailButton.type = "hidden";
+        sendEmailButton.name = "";
         message.style.display = "none";
         clearTimeout(xx);
     }

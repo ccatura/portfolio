@@ -592,4 +592,12 @@ a {
         width: 40vw;
         height: calc(40vw * .9);
     }
+
+    .email-modal-window {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 330px;
+    }
+    
+
 }

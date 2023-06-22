@@ -559,7 +559,7 @@ a {
     }
 }
 
-@media (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-height: 500px) {
     .heading-container {
         margin-top: 3px;
     }

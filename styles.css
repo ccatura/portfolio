@@ -560,5 +560,36 @@ a {
 }
 
 @media (orientation: landscape) {
+    .heading-container {
+        margin-top: 3px;
+    }
 
+    .heading {
+        margin-bottom: -10px;
+    }
+
+    .nav-container {
+        flex-flow: row nowrap;
+    }
+
+    .links-container {
+        width: auto;
+        margin: 3px;
+    }
+
+    .link {
+        margin: 0 5px;
+    }
+
+    .link-image {
+        height: 60px;
+        width: 60px;
+        border: 3px solid var(--border-color-general);
+        margin-bottom: 2px;
+    }
+
+    .project {
+        width: 40vw;
+        height: calc(40vw * .9);
+    }
 }

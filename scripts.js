@@ -38,6 +38,7 @@ clickEmailModal.addEventListener('click', function() {
     emailName[0].value = '';
     emailEmail[0].value = '';
     emailMessage[0].value = '';
+    goodToGo.checked = true;
 });
 
 // Toggles off email modal when submit button is clicked

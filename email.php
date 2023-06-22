@@ -23,6 +23,8 @@
         } else {
             echo "<h1>Message could not be sent.</h1><h3><a href='#' onclick='window.close();return false;'>Click here to try again.</a></h3>";
         }
+    } else {
+        echo "<h1>I think your message went through. You might have to go back or seomething, I don't know.</h1><h3><a href='#' onclick='window.close();return false;'>Click here to close this tab.</a></h3>";
     }
 ?>
 

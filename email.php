@@ -14,11 +14,15 @@
         $message .= "New message from your portfolio page from <strong>" . $name . "</strong> (" . $email . ")<br><hr>";
         $message .= $_POST['message'];
     } else {
-        $subject = "Spam from my portfolio webpage";
-        $message  = "Stopped spammer:<br>";
-        $message .= "Name: " . $name . "<br>";
-        $message .= "Email: " . $email . "<br>";
-        $message .= "Message: " . $_POST['message'] . "<br>";
+        http_response_code(404);
+        // include('my_404.php'); // provide your own HTML for the error page
+        die();
+
+        // $subject = "Spam from my portfolio webpage";
+        // $message  = "Stopped spammer:<br>";
+        // $message .= "Name: " . $name . "<br>";
+        // $message .= "Email: " . $email . "<br>";
+        // $message .= "Message: " . $_POST['message'] . "<br>";
     }
 
     $sendmail = mail($to, $subject, $message, implode("\r\n", $header));

@@ -48,10 +48,10 @@
         "title" : "UT Self Health",
         "cat" : "Professional Project",
         "status" : "Complete",
-        "description" : "At Moxley Carmichael, one of my initial projects involved developing a symptom assessment page for the University of Tennessee in Knoxville. This page effectively redirects users to the appropriate channels based on their needs.",
+        "description" : "At Moxley Carmichael, one of my initial projects involved developing a symptom assessment page for the University of Tennessee in Knoxville. This page effectively redirects users to the appropriate channels based on their needs. (No longer on live site).",
         "languages" : "HTML, CSS, JS",
         "image" : "images/thumbs/symptom-checker.jpg",
-        "url" : "https://selfhealth.tennessee.edu/"
+        "url" : "/apps/symptom-checker/"
     },
     {
         "title" : "Tiger Haven",

@@ -9,6 +9,15 @@
         "url" : "/apps/did-i-pay-it/"
     },
     {
+        "title" : "What's the Best?",
+        "cat" : "Personal Project",
+        "status" : "In Progress",
+        "description" : "Introducing 'What's the Best?' - the raddest 80s web app! Cast your votes on your favorite flicks, rockin' actors, wicked games, awesome toys, killer diners, and rad reads. Relive the nostalgia, groove with enthusiasts, and celebrate the icons that defined our generation. Join now and let's party like it's the 80s!",
+        "languages" : "HTML, CSS, PHP",
+        "image" : "images/thumbs/whats-the-best.jpg",
+        "url" : "http://meetmeinthe80s.com/apps/whats-the-best/"
+    },
+    {
         "title" : "Photo Time Estimator",
         "cat" : "Personal/Professional Project",
         "status" : "In Progress",

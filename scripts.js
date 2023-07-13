@@ -17,8 +17,10 @@ var goodToGoInput       = document.getElementsByName('good-to-go');
 goodToGo.addEventListener('click', function() {
     if (goodToGo.checked == false) {
         goodToGoInput[0].value = true;
+        sendEmailButton.disabled = false;
     } else {
         goodToGoInput[0].value = false;
+        sendEmailButton.disabled = true;
     }
 });
 

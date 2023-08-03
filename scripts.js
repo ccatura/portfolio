@@ -127,6 +127,7 @@ function listProjects() {
     var projLanguages = "";
     var projImage = "";
     var projUrl = "";
+    var projActive = "";
     var htmlOutput = "";
 
     for(var i = 0; i < projectCount; i++) {
@@ -137,16 +138,19 @@ function listProjects() {
         projLanguages = (projectsData[i].languages);
         projImage = (projectsData[i].image);
         projUrl = (projectsData[i].url);
+        projActive = (projectsData[i].active);
 
-        htmlOutput = htmlOutput + `
-        <a href='` + projUrl + `' target='_blank' class='project' rel='nofollow'>
-            <div class='project-thumbnail' style='background-image: url("` + projImage + `");'>
-                <div class='project-description body-copy'>
-                    <b>` + projCat + `<br>` + projStatus + `</b><br>` + projDescription + `<br><b>` + projLanguages + `</b>
+        if (projActive) {
+            htmlOutput = htmlOutput + `
+            <a href='` + projUrl + `' target='_blank' class='project' rel='nofollow'>
+                <div class='project-thumbnail' style='background-image: url("` + projImage + `");'>
+                    <div class='project-description body-copy'>
+                        <b>` + projCat + `<br>` + projStatus + `</b><br>` + projDescription + `<br><b>` + projLanguages + `</b>
+                    </div>
                 </div>
-            </div>
-            <div class='project-title'>` + projTitle + `</div>
-        </a>`;
+                <div class='project-title'>` + projTitle + `</div>
+            </a>`;
+        }
     }
     document.querySelector('.project-container').innerHTML = htmlOutput;
 }

@@ -3,7 +3,7 @@
         "title" : "What's the Best?",
         "cat" : "Personal Project",
         "status" : "In Progress",
-        "description" : "Introducing 'What's the Best?' - the raddest 80s web app! Cast your votes on your favorite flicks, rockin' actors, wicked games, awesome toys, killer diners, and rad reads. Relive the nostalgia, groove with enthusiasts, and celebrate the icons that defined our generation. Join now and let's party like it's the 80s!",
+        "description" : "This is a social app where users select their ultimate favorite from the 70s, 80s, and 90s across movies, games, toys, and more. Collecting user choices, the app determines the ultimate champs of each decade. Join us in uncovering nostalgia and settling debates. Currently in development, stay tuned!",
         "languages" : "HTML, CSS, PHP",
         "image" : "images/thumbs/whats-the-best.jpg",
         "url" : "http://meetmeinthe80s.com/apps/whats-the-best/",

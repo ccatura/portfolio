@@ -532,6 +532,16 @@ a {
     .about-container {
         scroll-margin-top: 140px;
     }
+
+    .project-description {
+        opacity: .8;
+    }
+
+
+
+    .project-thumbnail::before {
+        background-color: rgba(0, 0, 0, .7);
+    }
 }
 
 @media screen and (max-width: 370px) {
@@ -547,16 +557,16 @@ a {
         font-size: 1.22em;
     }
 
+    .project-description {
+        width: 95%;
+        height: 95%;
+        font-size: 12px;
+    }
+
 }
 
-@media (pointer: coarse) {
-    .project-description {
-        opacity: .8;
-    }
+@media (pointer: coarse) and (max-width: 500px) {
 
-    .project-thumbnail::before {
-        background-color: rgba(0, 0, 0, .7);
-    }
 }
 
 @media only screen and (orientation: landscape) and (max-height: 500px) {

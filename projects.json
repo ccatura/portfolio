@@ -1,5 +1,55 @@
 [
     {
+        "title" : "Ortho TN",
+        "cat" : "Professional Project",
+        "status" : "Previous Job Project",
+        "description" : "I proudly joined a massive team effort to build Otho TN from concept to completion. Using WordPress and Themeco's Cornerstone plugin, we created a user-friendly website with custom fields, post types, PHP custom code, and more. The PR team can now manage and update content without developer assistance.",
+        "languages" : "WordPress, PHP, JS, CSS",
+        "image" : "images/thumbs/ortho.jpg",
+        "url" : "https://www.orthotn.com/",
+        "active" : true
+    },
+    {
+        "title" : "Santa Paws Giving Tree",
+        "cat" : "Professional Project",
+        "status" : "Complete",
+        "description" : "A WordPress page I developed for the Young-Williams Animal Center that links to adoptable animals' Amazon wishlists. Using WordPress makes it highly user-friendly, so that anyone with the necessary credentials can easily update content as needed.",
+        "languages" : "WordPress, JS, CSS, HTML, PHP",
+        "image" : "images/thumbs/young-williams.jpg",
+        "url" : "https://www.young-williams.org/angel-tree/",
+        "active" : true
+    },
+    {
+        "title" : "UT Self Health",
+        "cat" : "Professional Project",
+        "status" : "Previous Job Project",
+        "description" : "At Moxley Carmichael, one of my initial projects involved developing a symptom assessment page for the University of Tennessee in Knoxville. This page effectively redirects users to the appropriate channels based on their needs. (No longer on live site).",
+        "languages" : "HTML, CSS, JS",
+        "image" : "images/thumbs/symptom-checker.jpg",
+        "url" : "/apps/symptom-checker/",
+        "active" : true
+    },
+    {
+        "title" : "Tiger Haven (Currently Offline)",
+        "cat" : "Professional Project",
+        "status" : "Previous Job Project",
+        "description" : "At Moxley Carmichael, I had the privilege of working on an exceptional project. Using WordPress and the Themeco plugin Cornerstone, we built this page from scratch, incorporating custom fields and post types for a truly unique and tailored experience.",
+        "languages" : "WordPress, JS, CSS",
+        "image" : "images/thumbs/tiger-haven.jpg",
+        "url" : "https://tigerhaven.wpengine.com/",
+        "active" : false
+    },
+    {
+        "title" : "The Mason Center",
+        "cat" : "Professional Project",
+        "status" : "Previous Job Project",
+        "description" : "This page was developed using WordPress and the robust Themeco plugin, Cornerstone. From start to finish, it seamlessly incorporates custom fields and post types, enhancing its versatility and customization capabilities.",
+        "languages" : "WordPress, JS, CSS",
+        "image" : "images/thumbs/mason-center.jpg",
+        "url" : "https://www.themasoncenterknox.com/",
+        "active" : true
+    },
+    {
         "title" : "What's the Best?",
         "cat" : "Personal Project",
         "status" : "In Progress",
@@ -48,56 +98,6 @@
         "image" : "images/thumbs/music-scroller.jpg",
         "url" : "/apps/music-scroller/",
         "active" : false
-    },
-    {
-        "title" : "Santa Paws Giving Tree",
-        "cat" : "Professional Project",
-        "status" : "Complete",
-        "description" : "A WordPress page I developed for the Young-Williams Animal Center that links to adoptable animals' Amazon wishlists. Using WordPress makes it highly user-friendly, so that anyone with the necessary credentials can easily update content as needed.",
-        "languages" : "WordPress, JS, CSS, HTML, PHP",
-        "image" : "images/thumbs/young-williams.jpg",
-        "url" : "https://www.young-williams.org/angel-tree/",
-        "active" : true
-    },
-    {
-        "title" : "Ortho TN",
-        "cat" : "Professional Project",
-        "status" : "Previous Job Project",
-        "description" : "I proudly joined a massive team effort to build Otho TN from concept to completion. Using WordPress and Themeco's Cornerstone plugin, we created a user-friendly website with custom fields, post types, PHP custom code, and more. The PR team can now manage and update content without developer assistance.",
-        "languages" : "WordPress, PHP, JS, CSS",
-        "image" : "images/thumbs/ortho.jpg",
-        "url" : "https://www.orthotn.com/",
-        "active" : true
-    },
-    {
-        "title" : "UT Self Health",
-        "cat" : "Professional Project",
-        "status" : "Previous Job Project",
-        "description" : "At Moxley Carmichael, one of my initial projects involved developing a symptom assessment page for the University of Tennessee in Knoxville. This page effectively redirects users to the appropriate channels based on their needs. (No longer on live site).",
-        "languages" : "HTML, CSS, JS",
-        "image" : "images/thumbs/symptom-checker.jpg",
-        "url" : "/apps/symptom-checker/",
-        "active" : true
-    },
-    {
-        "title" : "Tiger Haven (Currently Offline)",
-        "cat" : "Professional Project",
-        "status" : "Previous Job Project",
-        "description" : "At Moxley Carmichael, I had the privilege of working on an exceptional project. Using WordPress and the Themeco plugin Cornerstone, we built this page from scratch, incorporating custom fields and post types for a truly unique and tailored experience.",
-        "languages" : "WordPress, JS, CSS",
-        "image" : "images/thumbs/tiger-haven.jpg",
-        "url" : "https://tigerhaven.wpengine.com/",
-        "active" : false
-    },
-    {
-        "title" : "The Mason Center",
-        "cat" : "Professional Project",
-        "status" : "Previous Job Project",
-        "description" : "This page was developed using WordPress and the robust Themeco plugin, Cornerstone. From start to finish, it seamlessly incorporates custom fields and post types, enhancing its versatility and customization capabilities.",
-        "languages" : "WordPress, JS, CSS",
-        "image" : "images/thumbs/mason-center.jpg",
-        "url" : "https://www.themasoncenterknox.com/",
-        "active" : true
     },
     {
         "title" : "Shared Grocery List",

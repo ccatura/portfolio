@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+
+
+
+
+
+
+    <textarea style="margin-top: 1em" name="" id="input">not this</textarea>
+    <button id="submit">Display</button>
+</body>
+
+
+
+
+<script>
+    var input  = document.getElementById('input');
+    var output = document.getElementById('output');
+    var submit = document.getElementById('submit');
+    var theText;
+
+    input.select();
+
+    submit.addEventListener('click', function() {
+        theText = input.value;
+        output.innerText = theText;
+    });
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>

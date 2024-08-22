@@ -90,13 +90,13 @@
         "active" : true
     },
     {
-        "title" : "Music Scroller",
+        "title" : "Lyrics Scroller",
         "cat" : "Personal Project",
         "status" : "In Progress",
         "description" : "Music Scroller is a web-based teleprompter for on-stage singer/songwriters. It is a work-in-progress with some functional areas. Once complete, it will offer song creation, editing, sharing, and display features like a traditional teleprompter.",
         "languages" : "HTML, CSS, JS, PHP",
         "image" : "images/thumbs/music-scroller.jpg",
-        "url" : "/apps/music-scroller/",
+        "url" : "/apps/lyrics-scroller/",
         "active" : false
     },
     {

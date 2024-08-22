@@ -1,5 +1,5 @@
 //import projects from json file
-import projectsData from './projects.json' assert { type: "json" };
+import projectsData from './projects.json' with { type: "json" };
 
 var clickEmailModal     = document.getElementById('click-email-modal');
 var emailModal          = document.getElementById('email-modal');

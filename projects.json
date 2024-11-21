@@ -10,6 +10,16 @@
         "active" : true
     },
     {
+        "title" : "The Mason Center",
+        "cat" : "Professional Project",
+        "status" : "Previous Job Project",
+        "description" : "This page was developed using WordPress and the robust Themeco plugin, Cornerstone. From start to finish, it seamlessly incorporates custom fields and post types, enhancing its versatility and customization capabilities.",
+        "languages" : "WordPress, JS, CSS",
+        "image" : "images/thumbs/mason-center.jpg",
+        "url" : "https://www.themasoncenterknox.com/",
+        "active" : true
+    },
+    {
         "title" : "Santa Paws Giving Tree",
         "cat" : "Professional Project",
         "status" : "Complete",
@@ -38,16 +48,6 @@
         "image" : "images/thumbs/tiger-haven.jpg",
         "url" : "https://tigerhaven.wpengine.com/",
         "active" : false
-    },
-    {
-        "title" : "The Mason Center",
-        "cat" : "Professional Project",
-        "status" : "Previous Job Project",
-        "description" : "This page was developed using WordPress and the robust Themeco plugin, Cornerstone. From start to finish, it seamlessly incorporates custom fields and post types, enhancing its versatility and customization capabilities.",
-        "languages" : "WordPress, JS, CSS",
-        "image" : "images/thumbs/mason-center.jpg",
-        "url" : "https://www.themasoncenterknox.com/",
-        "active" : true
     },
     {
         "title" : "What's the Best?",

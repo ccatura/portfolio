@@ -1,0 +1,281 @@
+package courseProject;
+import java.awt.Dimension;
+import java.util.*;
+import javax.swing.*;
+
+public class BankAcctGUI extends JFrame {
+
+	public BankAcctGUI() {
+		super("Bank Account");
+	    setSize(300, 600);
+	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    JPanel 		panel 			= new JPanel();
+
+	   	JLabel 		custIDL			= new JLabel("ID: ");
+	   	JLabel 		custSSNL		= new JLabel("SSN: ");
+	   	JLabel 		custLastNameL	= new JLabel("Last name: ");
+	   	JLabel 		custFirstNameL	= new JLabel("First name: ");
+	   	JLabel 		custStreetL		= new JLabel("Street: ");
+	   	JLabel 		custCityL		= new JLabel("City: ");
+	   	JLabel 		custStateL		= new JLabel("State: ");
+	   	JLabel 		custZipL		= new JLabel("Zip code: ");
+	   	JLabel 		custPhoneL		= new JLabel("Phone number: ");
+	   	JLabel 		messageF		= new JLabel(" ");
+	   	JLabel 		messageL		= new JLabel("Message: ");
+	   	JLabel 		amountL			= new JLabel("Amount: ");
+	   	
+	   	JTextField 	custIDF		 	= new JTextField();
+	   	JTextField 	custSSNF		= new JTextField();
+	   	JTextField 	custLastNameF	= new JTextField();
+	   	JTextField 	custFirstNameF	= new JTextField();
+	   	JTextField 	custStreetF		= new JTextField();
+	   	JTextField 	custCityF		= new JTextField();
+	   	JTextField 	amountF			= new JTextField(" ");
+	   	
+	   	String[] states = { "NJ", "NY", "NM", "UT", "WY" };
+	   	JComboBox<String> statesBox = new JComboBox<>(states);
+	   	
+	   	String[] transType = { "Deposit", "Withdrawal", "Balance", "New Customer" };
+	   	JComboBox<String> transBox 	= new JComboBox<>(transType);
+	   	
+	   	JTextField 	custZipF		= new JTextField();
+	   	JTextField 	custPhoneF		= new JTextField();
+	   	
+        JButton 	addCustomer 	= new JButton("Add Customer");
+        JButton 	displayData 	= new JButton("Display Customer and Account Data");
+        JButton 	clear		 	= new JButton("Clear");
+
+        JRadioButton[] accountTypeB	= new JRadioButton[2];
+        accountTypeB[0] 			= new JRadioButton("Checking");
+        accountTypeB[1] 			= new JRadioButton("Savings");
+
+	   	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+
+	    panel.add(messageF);
+	    panel.add(custIDL);
+	    panel.add(custIDF);
+	    panel.add(custSSNL);
+	    panel.add(custSSNF);
+	    panel.add(custLastNameL);
+	    panel.add(custLastNameF);
+	    panel.add(custFirstNameL);
+	    panel.add(custFirstNameF);
+	    panel.add(custStreetL);
+	    panel.add(custStreetF);
+	    panel.add(custCityL);
+	    panel.add(custCityF);
+	    panel.add(custStateL);
+	    panel.add(statesBox);
+	    panel.add(custZipL);
+	    panel.add(custZipF);
+	    panel.add(custPhoneL);
+	    panel.add(custPhoneF);
+	   
+	    ButtonGroup group1 = new ButtonGroup();
+	    for (JRadioButton accountTypes : accountTypeB) {
+	           group1.add(accountTypes);
+	           panel.add(accountTypes);
+	    }
+
+	    panel.add(transBox);
+	    panel.add(amountL);
+	    panel.add(amountF);
+	    panel.add(addCustomer);
+	    panel.add(displayData);
+	    panel.add(clear);
+	    
+	    add(panel);
+	    setLocationRelativeTo(null);
+	    setVisible(true);
+
+	   	
+	   	
+	    addCustomer.addActionListener(e -> {
+	    	
+			ArrayList<Customer> allCustomers = new ArrayList<>();
+			String custID = "";
+			String custSSN = "";
+			String custLastName = "";
+			String custFirstName = "";
+			String custStreet = "";
+			String custCity = "";
+			String custState = "";
+			String custZip = "";
+			String custPhone = "";
+			String custIDPrompt = "Customer ID (non-blank, 5 chars): ";
+			String custSSNPrompt = "Customer SSN (non-blank, no symbols): ";
+			String custLastNamePrompt = "Customer last name (non-blank, no symbols or numbers): ";
+			String custFirstNamePrompt = "Customer first name (non-blank, no symbols or numbers): ";
+			String custStreetPrompt = "Customer street name (non-blank, no symbols): ";
+			String custCityPrompt = "Customer city (non-blank, no symbols or numbers): ";
+			String custStatePrompt = "Customer state (non-blank, no symbols or numbers, 2 chars): ";
+			String custZipPrompt = "Customer zip code (non-blank, no symbols or letters, 5 chars): ";
+			String custPhonePrompt = "Customer phone (non-blank, no symbols or letters): ";
+			double transactionAmmount = 0;
+			String transactionType = "";
+			String accountType = "";
+			
+			String tempCustIDF = custIDF.getText();
+			String tempCustSSNF = custSSNF.getText();
+			String tempCustLastNameF = custLastNameF.getText();
+			String tempCustFirstNameF = custFirstNameF.getText();
+			String tempCustStreetF = custStreetF.getText();
+			String tempCustCityF = custCityF.getText();
+			String tempCustStateF = (String) statesBox.getSelectedItem();
+			String tempCustZipF = custZipF.getText();
+			String tempCustPhoneF = custPhoneF.getText();
+			
+			// Transaction part
+			String tempTransType = (String) transBox.getSelectedItem();
+			String tempAmount = amountF.getText();
+	    	
+			if (tempTransType.equals("Deposit")) {
+				tempTransType = "dep";
+			} else if (tempTransType.equals("Withdrawal")) {
+				tempTransType = "wth";
+			} else if (tempTransType.equals("Balance")) {
+				tempTransType = "bal";
+			} else if (tempTransType.equals("New Customer")) {
+				tempTransType = "new";
+			}
+
+			
+			// Build error messages
+			String errorMessages = "<html>";
+	    
+			if (!DataEntry.checkStringForInt(tempCustIDF) || !DataEntry.checkStringLength(tempCustIDF, 5)) {
+				errorMessages += "Invalid customer ID, ";
+			} 
+			
+			if (!DataEntry.checkStringForInt(tempCustSSNF) || !DataEntry.checkStringLength(tempCustSSNF, 9)) {
+				errorMessages += "Invalid SSN, ";
+			}
+			
+			if (!DataEntry.checkString(tempCustLastNameF) || !DataEntry.checkMaxLength(tempCustLastNameF, 20)) {
+				errorMessages += "Invalid last name format, ";
+			}
+			if (!DataEntry.checkString(tempCustFirstNameF) || !DataEntry.checkMaxLength(tempCustFirstNameF, 15)) {
+				errorMessages += "Invalid first name format, ";
+			}
+			if (!DataEntry.checkString(tempCustStreetF) || !DataEntry.checkMaxLength(tempCustStreetF, 20)) {
+				errorMessages += "Invalid street format, ";
+			}
+			if (!DataEntry.checkString(tempCustCityF) || !DataEntry.checkMaxLength(tempCustCityF, 20)) {
+				errorMessages += "Invalid city format, ";
+			}
+			if (!DataEntry.checkString(tempCustStateF) || !DataEntry.checkStringLength(tempCustStateF, 2) || DataEntry.checkStringForInt(tempCustStateF)) {
+				errorMessages += "Invalid state, ";
+			}
+			if (!DataEntry.checkStringForInt(tempCustZipF) || !DataEntry.checkStringLength(tempCustZipF, 5)) {
+				errorMessages += "Invalid zip code format, ";
+			}
+			if (!DataEntry.checkStringForInt(tempCustPhoneF) || !DataEntry.checkStringLength(tempCustPhoneF, 10)) {
+				errorMessages += "Invalid phone number";
+			}
+			
+			
+			messageF.setText(errorMessages);
+			
+			// Create the Customer class instance for the new  customer
+			Customer newCustomer = new Customer(
+											tempCustIDF,
+											tempCustSSNF,
+											tempCustLastNameF,
+											tempCustFirstNameF,
+											tempCustStreetF,
+											tempCustCityF,
+											tempCustStateF,
+											tempCustZipF,
+											tempCustPhoneF);
+			allCustomers.add(newCustomer); //Add new customer to allCustomers arraylist
+			String customerInfo = newCustomer.getAllCustomerInfo();			
+			
+			
+			System.out.println(accountTypeB.clone());
+			
+			
+			
+			
+			if (!tempTransType.equalsIgnoreCase("new")) {
+				if (accountType.equalsIgnoreCase("sav")) {
+					if (transactionType.equalsIgnoreCase("dep")) {
+						newCustomer.savingsAccount.deposit(transactionAmmount);
+					} else if (transactionType.equalsIgnoreCase("wth")) {
+						newCustomer.savingsAccount.withdraw(transactionAmmount);
+					} else {
+						newCustomer.savingsAccount.getBalance();
+					}
+					System.out.println("Customer (" + newCustomer.savingsAccount.custID + ") current " + newCustomer.savingsAccount.accountType + " balance: " + newCustomer.savingsAccount.getBalance());
+				} else if (accountType.equalsIgnoreCase("chk")) {
+					if (transactionType.equalsIgnoreCase("dep")) {
+						newCustomer.checkingAccount.deposit(transactionAmmount);
+					} else if (transactionType.equalsIgnoreCase("wth")) {
+						newCustomer.checkingAccount.withdraw(transactionAmmount);
+					} else {
+						newCustomer.checkingAccount.getBalance();
+					}
+					System.out.println("Customer (" + newCustomer.checkingAccount.custID + ") current " + newCustomer.checkingAccount.accountType + " balance: " + newCustomer.checkingAccount.getBalance());
+				}
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+	        JOptionPane.showMessageDialog(
+	                this,
+	                customerInfo,
+	                "Account Information",
+	                JOptionPane.INFORMATION_MESSAGE
+	            );
+	        
+	        // Clear all fields except ID
+			custSSNF.setText("");
+			custLastNameF.setText("");
+			custFirstNameF.setText("");
+			custStreetF.setText("");
+			custCityF.setText("");
+			statesBox.setSelectedIndex(0);
+			custZipF.setText("");
+			custPhoneF.setText("");
+	        
+			
+
+		    	
+		    	
+		    });
+
+	    
+	    
+	    
+	    
+	    
+	   	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		BankAcctGUI bankAccount = new BankAcctGUI();
+	}
+}
+

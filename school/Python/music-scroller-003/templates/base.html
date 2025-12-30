@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Simple Flask App</title>
+</head>
+<body>
+    <!-- Simple Navbar -->
+    <nav>
+        
+    {% include 'navbar.html' %}
+
+    </nav>
+    <hr>
+
+    <!-- Page-specific content goes here -->
+    {% block content %}{% endblock %}
+</body>
+</html>

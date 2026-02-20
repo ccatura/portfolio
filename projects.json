@@ -1,0 +1,162 @@
+[
+    {
+        "title" : "Retro Pac-Man Clock",
+        "cat" : "Person Project",
+        "status" : "In Progress",
+        "description" : "having previously broken my Pac-Man LED clock, I decided to recreate it using HTML, JavaScript, and CSS. The memory of this clock brings joy, so to see it maticulously recreated in this web app, also brings me joy. I hope you will enjoy it as well!",
+        "languages" : "HTML, JS, CSS",
+        "image" : "images/thumbs/pacm-man-clock.jpg",
+        "url" : "/apps/retro-clock/",
+        "active" : true
+    },
+    {
+        "title" : "Ortho TN",
+        "cat" : "Professional Project",
+        "status" : "Previous Job Project",
+        "description" : "I proudly joined a massive team effort to build Otho TN from concept to completion. Using WordPress and Themeco's Cornerstone plugin, we created a user-friendly website with custom fields, post types, PHP custom code, and more. The PR team can now manage and update content without developer assistance.",
+        "languages" : "WordPress, PHP, JS, CSS",
+        "image" : "images/thumbs/ortho.jpg",
+        "url" : "https://www.orthotn.com/",
+        "active" : true
+    },
+    {
+        "title" : "The Mason Center",
+        "cat" : "Professional Project",
+        "status" : "Previous Job Project",
+        "description" : "This page was developed using WordPress and the robust Themeco plugin, Cornerstone. From start to finish, it seamlessly incorporates custom fields and post types, enhancing its versatility and customization capabilities.",
+        "languages" : "WordPress, JS, CSS",
+        "image" : "images/thumbs/mason-center.jpg",
+        "url" : "https://www.themasoncenterknox.com/",
+        "active" : true
+    },
+    {
+        "title" : "Santa Paws Giving Tree",
+        "cat" : "Professional Project",
+        "status" : "Complete",
+        "description" : "A WordPress page I developed for the Young-Williams Animal Center that links to adoptable animals' Amazon wishlists. Using WordPress makes it highly user-friendly, so that anyone with the necessary credentials can easily update content as needed.",
+        "languages" : "WordPress, JS, CSS, HTML, PHP",
+        "image" : "images/thumbs/young-williams.jpg",
+        "url" : "https://www.young-williams.org/angel-tree/",
+        "active" : true
+    },
+    {
+        "title" : "UT Self Health",
+        "cat" : "Professional Project",
+        "status" : "Previous Job Project",
+        "description" : "At Moxley Carmichael, one of my initial projects involved developing a symptom assessment page for the University of Tennessee in Knoxville. This page effectively redirects users to the appropriate channels based on their needs. (No longer on live site).",
+        "languages" : "HTML, CSS, JS",
+        "image" : "images/thumbs/symptom-checker.jpg",
+        "url" : "/apps/symptom-checker/",
+        "active" : true
+    },
+    {
+        "title" : "Tiger Haven (Currently Offline)",
+        "cat" : "Professional Project",
+        "status" : "Previous Job Project",
+        "description" : "At Moxley Carmichael, I had the privilege of working on an exceptional project. Using WordPress and the Themeco plugin Cornerstone, we built this page from scratch, incorporating custom fields and post types for a truly unique and tailored experience.",
+        "languages" : "WordPress, JS, CSS",
+        "image" : "images/thumbs/tiger-haven.jpg",
+        "url" : "https://tigerhaven.wpengine.com/",
+        "active" : false
+    },
+    {
+        "title" : "What's the Best?",
+        "cat" : "Personal Project",
+        "status" : "In Progress",
+        "description" : "This is a social app where users select their ultimate favorite from the 70s, 80s, and 90s across movies, games, toys, and more. Collecting user choices, the app determines the ultimate champs of each decade. Join us in uncovering nostalgia and settling debates. Currently in development, stay tuned!",
+        "languages" : "HTML, CSS, PHP",
+        "image" : "images/thumbs/whats-the-best.jpg",
+        "url" : "http://meetmeinthe80s.com/apps/whats-the-best/",
+        "active" : true
+    },
+    {
+        "title" : "Lyrics Scroller",
+        "cat" : "Personal Project",
+        "status" : "In Progress",
+        "description" : "Lyrics Scroller is a web-based teleprompter for on-stage singer/songwriters. Once complete, it will offer song creation, song editing, setlists, and display features like a traditional teleprompter. Try it out!",
+        "languages" : "HTML, CSS, JS, PHP",
+        "image" : "images/thumbs/lyrics-scroller.jpg",
+        "url" : "/apps/lyrics-scroller/?page=song_list",
+        "active" : true
+    },
+    {
+        "title" : "Did I Pay It?",
+        "cat" : "Personal Project",
+        "status" : "Almost Complete",
+        "description" : "This is a user-friendly application that allows you to keep track of your monthly bills with ease. Simply create boards, add payees, and check off the checkbox next to them to indicate that you have paid your bill. Your bill tracking data is securely stored in the cloud and can be accessed from any device with an internet connection. To get started, log in below or create a new account.",
+        "languages" : "HTML, CSS, JS, PHP",
+        "image" : "images/thumbs/didipayit.jpg",
+        "url" : "/apps/did-i-pay-it/",
+        "active" : true
+    },
+    {
+        "title" : "Photo Time Estimator",
+        "cat" : "Personal/Professional Project",
+        "status" : "Complete",
+        "description" : "Photo Time Estimator calculates the duration for photographing a batch of images. You can use preset average times or input custom times. It aids in providing accurate completion estimates to clients for their product shots at my photography job.",
+        "languages" : "HTML, CSS, JS",
+        "image" : "images/thumbs/photo-estimator.jpg",
+        "url" : "/apps/photo-time-estimator/",
+        "active" : true
+    },
+    {
+        "title" : "Lyrics Scroller",
+        "cat" : "Personal Project",
+        "status" : "In Progress",
+        "description" : "Music Scroller is a web-based teleprompter for on-stage singer/songwriters. It is a work-in-progress with some functional areas. Once complete, it will offer song creation, editing, sharing, and display features like a traditional teleprompter.",
+        "languages" : "HTML, CSS, JS, PHP",
+        "image" : "images/thumbs/music-scroller.jpg",
+        "url" : "/apps/lyrics-scroller/",
+        "active" : false
+    },
+    {
+        "title" : "Shared Grocery List",
+        "cat" : "Personal Project",
+        "status" : "In Progress",
+        "description" : "Shared Grocery List was conceived to enhance connectivity between shoppers and at-home participants, minimizing in-store traffic during COVID. It offers real-time updates for crossed-off or added/deleted items, along with seamless real-time chat functionality.",
+        "languages" : "HTML, CSS, JS, PHP, Ajax",
+        "image" : "images/thumbs/shared-grocery-list.jpg",
+        "url" : "/apps/shared-grocery-list/view-list.html",
+        "active" : true
+    },
+    {
+        "title" : "Vade Inspacers",
+        "cat" : "School Project",
+        "status" : "Complete",
+        "description" : "Embark on an exciting journey with this inspired Space Invaders game. It's a simplified version and my first complete programming achievement from 2017. Prepare for nostalgic fun!",
+        "languages" : "HTML, CSS, JS, jQuery",
+        "image" : "images/thumbs/vade-inspacers.jpg",
+        "url" : "/apps/vade-inspacers/",
+        "active" : true
+    },
+    {
+        "title" : "Quasar Image Database",
+        "cat" : "Personal/Professional Project",
+        "status" : "In Progress",
+        "description" : "I am currently revamping a personal project for my employer. The original, a limited Windows application, is undergoing a complete transformation into a cross-platform web app.",
+        "languages" : "HTML, CSS, JS, PHP",
+        "image" : "images/thumbs/quasar.jpg",
+        "url" : "/apps/quasar/",
+        "active" : false
+    },
+    {
+        "title" : "Quota Calculator",
+        "cat" : "Personal/Professional Project",
+        "status" : "Complete",
+        "description" : "Quota Calculator evaluates the daily performance of photographers in my former photography department, providing a quantifiable score for their productivity.",
+        "languages" : "HTML, CSS, JS",
+        "image" : "images/thumbs/quot-calc.jpg",
+        "url" : "/apps/quota-calculator/",
+        "active" : true
+    },
+    {
+        "title" : "Stereogram Maker",
+        "cat" : "Personal Project",
+        "status" : "In Progress",
+        "description" : "Stereogram Maker will seamlessly combine two similar user images, creating mesmerizing cross-eye or parallel stereograms. It will also provide the option to export the result as a single image.",
+        "languages" : "HTML, CSS, JS",
+        "image" : " ",
+        "url" : "/apps/stereogram-maker/",
+        "active" : false
+    }
+]

@@ -1,9 +1,19 @@
 [
     {
         "title" : "Retro Pac-Man Clock",
-        "cat" : "Person Project",
+        "cat" : "Personal Project",
         "status" : "In Progress",
-        "description" : "having previously broken my Pac-Man LED clock, I decided to recreate it using HTML, JavaScript, and CSS. The memory of this clock brings joy, so to see it maticulously recreated in this web app, also brings me joy. I hope you will enjoy it as well!",
+        "description" : "Having previously broken my Pac-Man LED clock, I decided to recreate it using HTML, JavaScript, and CSS. The memory of this clock brings joy, so to see it maticulously recreated in this web app, also brings me joy. I hope you will enjoy it as well!",
+        "languages" : "HTML, JS, CSS",
+        "image" : "images/thumbs/pacm-man-clock.jpg",
+        "url" : "/apps/retro_clock/",
+        "active" : true
+    },
+    {
+        "title" : "Be Grimsical",
+        "cat" : "Personal Project",
+        "status" : "In Progress",
+        "description" : "In my spare time, I am writing a comic book. I will also have products involved with the comic. Here you can find all my social media links and see some of my drawings and story examples.",
         "languages" : "HTML, JS, CSS",
         "image" : "images/thumbs/pacm-man-clock.jpg",
         "url" : "/apps/retro_clock/",

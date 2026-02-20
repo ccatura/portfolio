@@ -1,27 +1,17 @@
 //import projects from json file
 // import projectsData from './projects.json' with { type: "json" };
 
-let projectsData = []; 
+// 1. Fetch the data and WAIT for it
+const response = await fetch('./projects.json');
+const projectsData = await response.json();
 
-async function loadData() {
-    try {
-        const response = await fetch('./projects.json');
-        // 2. Assign the fetched data to your original variable name
-        projectsData = await response.json();
-        
-        // 3. IMPORTANT: Call the functions that need this data inside here
-        initPortfolio(); 
-    } catch (error) {
-        console.error("Failed to load projects:", error);
-    }
-}
+// 2. NOW your existing code runs exactly as it did before
+console.log(projectsData); // This will be FULL, not empty!
 
-function initPortfolio() {
-    console.log(projectsData); // Now this works just like the import did
-    // Your logic to build the grid or list goes here
-}
-
-loadData();
+// Example of your existing code:
+projectsData.forEach(project => {
+    console.log("Building grid for:", project.name);
+});
 
 
 

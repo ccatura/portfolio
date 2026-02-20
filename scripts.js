@@ -1,17 +1,27 @@
 //import projects from json file
 // import projectsData from './projects.json' with { type: "json" };
 
-async function loadMyFile() {
+let projectsData = []; 
+
+async function loadData() {
     try {
-        const response = await fetch('projects.json');
-        const data = await response.json();
-        console.log(data);
+        const response = await fetch('./projects.json');
+        // 2. Assign the fetched data to your original variable name
+        projectsData = await response.json();
+        
+        // 3. IMPORTANT: Call the functions that need this data inside here
+        initPortfolio(); 
     } catch (error) {
-        console.error("Could not load file", error);
+        console.error("Failed to load projects:", error);
     }
 }
 
-loadMyFile();
+function initPortfolio() {
+    console.log(projectsData); // Now this works just like the import did
+    // Your logic to build the grid or list goes here
+}
+
+loadData();
 
 
 

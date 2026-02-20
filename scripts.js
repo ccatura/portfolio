@@ -1,17 +1,15 @@
 //import projects from json file
 // import projectsData from './projects.json' with { type: "json" };
 
-// 1. Fetch the data and WAIT for it
 const response = await fetch('./projects.json');
 const projectsData = await response.json();
 
-// 2. NOW your existing code runs exactly as it did before
-console.log(projectsData); // This will be FULL, not empty!
+// console.log(projectsData);
 
-// Example of your existing code:
-projectsData.forEach(project => {
-    console.log("Building grid for:", project.name);
-});
+// // Example of your existing code:
+// projectsData.forEach(project => {
+//     console.log("Building grid for:", project.name);
+// });
 
 
 

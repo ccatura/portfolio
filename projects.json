@@ -6,7 +6,7 @@
         "description" : "having previously broken my Pac-Man LED clock, I decided to recreate it using HTML, JavaScript, and CSS. The memory of this clock brings joy, so to see it maticulously recreated in this web app, also brings me joy. I hope you will enjoy it as well!",
         "languages" : "HTML, JS, CSS",
         "image" : "images/thumbs/pacm-man-clock.jpg",
-        "url" : "/apps/retro-clock/",
+        "url" : "/apps/retro_clock/",
         "active" : true
     },
     {

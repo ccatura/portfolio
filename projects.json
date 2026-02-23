@@ -20,6 +20,16 @@
         "active" : true
     },
     {
+        "title" : "Lyrics Scroller",
+        "cat" : "Personal Project",
+        "status" : "In Progress",
+        "description" : "Lyrics Scroller is a web-based teleprompter for on-stage singer/songwriters. Once complete, it will offer song creation, song editing, setlists, and display features like a traditional teleprompter. Try it out!",
+        "languages" : "HTML, CSS, JS, PHP",
+        "image" : "images/thumbs/lyrics-scroller.jpg",
+        "url" : "/apps/lyrics-scroller/?page=song_list",
+        "active" : true
+    },
+    {
         "title" : "Ortho TN",
         "cat" : "Professional Project",
         "status" : "Previous Job Project",
@@ -77,16 +87,6 @@
         "languages" : "HTML, CSS, PHP",
         "image" : "images/thumbs/whats-the-best.jpg",
         "url" : "http://meetmeinthe80s.com/apps/whats-the-best/",
-        "active" : true
-    },
-    {
-        "title" : "Lyrics Scroller",
-        "cat" : "Personal Project",
-        "status" : "In Progress",
-        "description" : "Lyrics Scroller is a web-based teleprompter for on-stage singer/songwriters. Once complete, it will offer song creation, song editing, setlists, and display features like a traditional teleprompter. Try it out!",
-        "languages" : "HTML, CSS, JS, PHP",
-        "image" : "images/thumbs/lyrics-scroller.jpg",
-        "url" : "/apps/lyrics-scroller/?page=song_list",
         "active" : true
     },
     {
